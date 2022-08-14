@@ -92,7 +92,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-4">
                                     <div class="logo-part">
-                                        <a href="index.html">
+                                        <a href="/">
                                             <img class="normal-logo" src="dm/logo1.png" alt="logo">  
                                             <img class="sticky-logo" src="dm/logo.png" alt="logo">
                                         </a>
@@ -139,7 +139,7 @@
                 <nav class="right_menu_togle hidden-md">
                     <div class="close-btn"><span id="nav-close" class="text-center"><i class="fa fa-close"></i></span></div>
                     <div class="canvas-logo">
-                        <a href="index.html">bbbb<img src="assets/images/logo-dark.png" alt="logo"></a>
+                        <a href="/"><img src="assets/images/logo-dark.png" alt="logo"></a>
                     </div>
                     <div class="offcanvas-text">
                         <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
@@ -1323,7 +1323,7 @@
                                     </h2>
                                 </div>
                                 <div id="form-messages"></div>
-                                <form id="contact-form" method="post" action="index.html">
+                                <form id="contact-form" method="post" action="index.php">
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-lg-6 mb-25 col-md-6 col-sm-6">
@@ -1438,7 +1438,7 @@ DromoMinds is a sincere company including a group of experienced developers and 
                         </div>
                         <div class="col-lg-6">
                             <div class="copyright">
-                                <p>&copy; 2021 All Rights Reserved. Developed By <a href="index.html">DromoMinds Solutions</a></p>
+                                <p>&copy; 2021 All Rights Reserved. Developed By <a href="/">DromoMinds Solutions</a></p>
                             </div>
                         </div>
                     </div>
