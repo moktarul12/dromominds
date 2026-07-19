@@ -104,7 +104,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
                     <p>Gap assessments against FDA and EU expectations, warning letter response, 483 remediation programmes and mock inspection support.</p>
                     <div class="svc-tags"><span>Gap Analysis</span><span>483 Response</span><span>Mock Audits</span></div>
                 </div>
-                <div class="svc-card reveal reveal-d2" data-num="06">
+                <div class="svc-card reveal reveal-d2" data-num="06" id="training">
                     <div class="svc-icon"><i class="fas fa-chalkboard-user"></i></div>
                     <h3>Skills Training</h3>
                     <p>Hands-on CSV, CSA and data integrity training for QA and IT teams, so compliance capability stays in-house after we leave.</p>
@@ -190,7 +190,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ CASE STUDIES ============ -->
-    <section class="section">
+    <section class="section" id="case-studies">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">Proven Success</div>
@@ -223,7 +223,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ SECTORS ============ -->
-    <section class="section section-white bg-molecule">
+    <section class="section section-white bg-molecule" id="sectors">
         <div class="container">
             <div class="section-head center reveal">
                 <div class="kicker">Sectors We Empower</div>
@@ -310,7 +310,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ ASSESSMENT TOOL ============ -->
-    <section class="section bg-circuit">
+    <section class="section bg-circuit" id="assessment">
         <div class="container">
             <div class="split">
                 <div class="reveal">
@@ -340,7 +340,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ CSA TRANSITION KIT ============ -->
-    <section class="section section-dark bg-neural-dark">
+    <section class="section section-dark bg-neural-dark" id="csa-kit">
         <div class="container">
             <div class="split">
                 <div class="reveal">
