@@ -14,12 +14,12 @@ $page_desc = 'Book exhibition stalls like cinema seats. StallSpot by DromoMinds 
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-grid-lines"></div>
         <div class="container">
-            <div class="breadcrumb"><a href="index.php">Home</a> / <a href="products.php">Products</a> / StallSpot</div>
+            <div class="breadcrumb"><a href="/">Home</a> / <a href="/products">Products</a> / StallSpot</div>
             <h1>Book a stall like you<br>book a cinema seat.</h1>
             <p>StallSpot turns exhibition stall booking from a week of phone calls into a three-minute checkout. Pick your spot on a live floor plan, pay, and you're confirmed — for expos, trade fairs, melas and conventions.</p>
             <div class="hero-actions" style="margin-top: 36px;">
                 <a href="#demo" class="btn btn-crimson">Try the Live Floor Plan <i class="fas fa-arrow-down"></i></a>
-                <a href="contact.php" class="btn btn-ghost-light">Get StallSpot for Your Event</a>
+                <a href="/contact" class="btn btn-ghost-light">Get StallSpot for Your Event</a>
             </div>
         </div>
     </section>
@@ -183,7 +183,7 @@ $page_desc = 'Book exhibition stalls like cinema seats. StallSpot by DromoMinds 
             <div class="cta-panel reveal">
                 <h2>Running an expo, fair or mela?</h2>
                 <p>Get StallSpot deployed for your event with your own floor plan, branding and payment gateway — typically live within two weeks.</p>
-                <a href="contact.php" class="btn btn-crimson">Request a StallSpot Demo <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-crimson">Request a StallSpot Demo <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

@@ -14,7 +14,7 @@ $page_desc = 'DromoMinds Solutions — an AI, IT and pharma validation company w
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-grid-lines"></div>
         <div class="container">
-            <div class="breadcrumb"><a href="index.php">Home</a> / About</div>
+            <div class="breadcrumb"><a href="/">Home</a> / About</div>
             <h1>Engineers who ship.<br>Auditors who understand code.</h1>
             <p>DromoMinds Solutions was built on a simple observation: the companies that build great software rarely understand regulation, and the ones that understand regulation rarely build great software. We decided to do both.</p>
         </div>
@@ -34,7 +34,7 @@ $page_desc = 'DromoMinds Solutions — an AI, IT and pharma validation company w
                         <li><i class="fas fa-check"></i> Zero FDA 483 findings across our validation engagements</li>
                         <li><i class="fas fa-check"></i> ISO 9001 certified processes with agile delivery</li>
                     </ul>
-                    <a href="contact.php" class="btn btn-crimson">Work With Us <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact" class="btn btn-crimson">Work With Us <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1">
                     <div class="badge-wall glow-panel">
@@ -120,7 +120,7 @@ $page_desc = 'DromoMinds Solutions — an AI, IT and pharma validation company w
             <div class="cta-panel reveal">
                 <h2>Let's build something worth talking about.</h2>
                 <p>Whether it's a product, a platform or a compliance programme — we'd love to hear what you're planning.</p>
-                <a href="contact.php" class="btn btn-crimson">Get in Touch <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-crimson">Get in Touch <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

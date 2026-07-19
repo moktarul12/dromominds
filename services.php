@@ -14,7 +14,7 @@ $page_desc = 'AI & machine learning, software engineering, mobile apps, UI/UX de
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-grid-lines"></div>
         <div class="container">
-            <div class="breadcrumb"><a href="index.php">Home</a> / Services</div>
+            <div class="breadcrumb"><a href="/">Home</a> / Services</div>
             <h1>Full-stack capability,<br>from model to market.</h1>
             <p>Six practices under one roof — so your AI, your app, your brand and your compliance never have to be stitched together across vendors.</p>
         </div>
@@ -167,7 +167,7 @@ $page_desc = 'AI & machine learning, software engineering, mobile apps, UI/UX de
                     <div class="kicker">Pharma CSV Validation</div>
                     <h2 class="section-title">The service that makes us unusual.</h2>
                     <p class="section-sub">GAMP 5 computerized system validation, equipment qualification, data integrity and audit remediation — delivered by consultants who speak the FDA's language and write production code.</p>
-                    <a href="validation.php" class="btn btn-crimson" style="margin-top: 20px;">Explore the Validation Practice <i class="fas fa-arrow-right"></i></a>
+                    <a href="/validation" class="btn btn-crimson" style="margin-top: 20px;">Explore the Validation Practice <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1">
                     <div class="badge-wall">
@@ -187,7 +187,7 @@ $page_desc = 'AI & machine learning, software engineering, mobile apps, UI/UX de
             <div class="cta-panel reveal">
                 <h2>Not sure which service you need?</h2>
                 <p>Describe the problem — we'll tell you honestly what it takes, and what it doesn't.</p>
-                <a href="contact.php" class="btn btn-crimson">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-crimson">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

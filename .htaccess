@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Redirect /index.php and /index to /
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^index/?$ / [R=301,L]
+
+# Redirect /page.php to /page (keep query string and fragments via browser)
+RewriteCond %{THE_REQUEST} \s/+([^.?\s]+)\.php[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Serve /page as /page.php when the PHP file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

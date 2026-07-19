@@ -14,12 +14,12 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-grid-lines"></div>
         <div class="container">
-            <div class="breadcrumb"><a href="index.php">Home</a> / Pharma Validation</div>
+            <div class="breadcrumb"><a href="/">Home</a> / Pharma Validation</div>
             <h1>Audit readiness.<br>Regulatory confidence.</h1>
             <p>Ensure data integrity, accelerate validation cycles and maintain inspection readiness with our end-to-end compliance solutions — CSV, FDA 21 CFR Part 11 and GAMP 5 validation services.</p>
             <div class="hero-actions" style="margin-top: 36px;">
-                <a href="contact.php" class="btn btn-crimson">Book a Free Compliance Assessment <i class="fas fa-arrow-right"></i></a>
-                <a href="contact.php" class="btn btn-ghost-light">Get CSV Readiness Checklist</a>
+                <a href="/contact" class="btn btn-crimson">Book a Free Compliance Assessment <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-ghost-light">Get CSV Readiness Checklist</a>
             </div>
             <div class="chip-row">
                 <div class="chip"><strong>GxP-Focused</strong><span>Compliance Delivery</span></div>
@@ -171,7 +171,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
                         <li><i class="fas fa-check"></i> <strong>Remediate&nbsp;—</strong>&nbsp;Triage of findings, system remediation, retroactive audit trail reviews and sustainable data governance boards.</li>
                     </ul>
                     <p class="section-sub" style="margin-bottom: 28px;">Most IT consultancies can't speak to FDA inspectors. Most quality consultancies can't fix the systems. Most engineering firms don't understand GxP. <strong style="color: var(--white);">DromoMinds does all three.</strong></p>
-                    <a href="contact.php" class="btn btn-crimson">Discuss Your Compliance Strategy <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact" class="btn btn-crimson">Discuss Your Compliance Strategy <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1" id="frameworks">
                     <div class="badge-wall">
@@ -323,7 +323,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
                         <li><i class="fas fa-check"></i> <strong>Instant Maturity Score&nbsp;—</strong>&nbsp;compare against industry peers</li>
                         <li><i class="fas fa-check"></i> <strong>Detailed Recommendations&nbsp;—</strong>&nbsp;actionable intelligence</li>
                     </ul>
-                    <a href="contact.php" class="btn btn-crimson">Start Free CSV Assessment <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact" class="btn btn-crimson">Start Free CSV Assessment <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1">
                     <div class="glow-panel">
@@ -352,7 +352,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
                         <li><i class="fas fa-check"></i> FDA auditor FAQ and strategic defense checklist</li>
                         <li><i class="fas fa-check"></i> Step-by-step guidance to reduce documentation by 40%</li>
                     </ul>
-                    <a href="contact.php" class="btn btn-crimson">Get Free Access to the Kit <i class="fas fa-arrow-right"></i></a>
+                    <a href="/contact" class="btn btn-crimson">Get Free Access to the Kit <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1">
                     <div class="badge-wall">
@@ -390,7 +390,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
             <div class="cta-panel reveal">
                 <h2>Ready to close the compliance gap?</h2>
                 <p>Start with a structured Compliance Readiness Assessment — fixed-fee, executive-ready output that uncovers critical vulnerabilities in your system validation and QMS.</p>
-                <a href="contact.php" class="btn btn-crimson">Start Your Free CSV Assessment <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-crimson">Start Your Free CSV Assessment <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

@@ -84,11 +84,11 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
                 </div>
                 <?php
                 $industries = [
-                    ['tone' => 'blue',   'art' => 'pills',       'art2' => 'capsules',   'title' => 'Pharmaceutical',  'items' => ['21 CFR Part 11', 'EU Annex 11', 'GAMP 5'],                     'href' => 'validation.php'],
-                    ['tone' => 'purple', 'art' => 'dna',         'art2' => 'bacterium',  'title' => 'Biotechnology',   'items' => ['Data Integrity', 'AI Validation', 'Process Controls'],         'href' => 'validation.php'],
-                    ['tone' => 'green',  'art' => 'flask-vial',  'art2' => 'atom',       'title' => 'Chemical Industry', 'items' => ['EHS Compliance', 'Process Safety', 'Audit Ready'],           'href' => 'validation.php'],
-                    ['tone' => 'orange', 'art' => 'heart-pulse', 'art2' => 'microchip',  'title' => 'Medical Devices', 'items' => ['ISO 13485', 'UDI Compliance', 'Design Controls'],              'href' => 'validation.php'],
-                    ['tone' => 'teal',   'art' => 'microscope',  'art2' => 'wheat-awn',  'title' => 'Food &amp; Nutrition', 'items' => ['HACCP', 'Quality Assurance', 'Traceability'],             'href' => 'services.php'],
+                    ['tone' => 'blue',   'art' => 'pills',       'art2' => 'capsules',   'title' => 'Pharmaceutical',  'items' => ['21 CFR Part 11', 'EU Annex 11', 'GAMP 5'],                     'href' => '/validation'],
+                    ['tone' => 'purple', 'art' => 'dna',         'art2' => 'bacterium',  'title' => 'Biotechnology',   'items' => ['Data Integrity', 'AI Validation', 'Process Controls'],         'href' => '/validation'],
+                    ['tone' => 'green',  'art' => 'flask-vial',  'art2' => 'atom',       'title' => 'Chemical Industry', 'items' => ['EHS Compliance', 'Process Safety', 'Audit Ready'],           'href' => '/validation'],
+                    ['tone' => 'orange', 'art' => 'heart-pulse', 'art2' => 'microchip',  'title' => 'Medical Devices', 'items' => ['ISO 13485', 'UDI Compliance', 'Design Controls'],              'href' => '/validation'],
+                    ['tone' => 'teal',   'art' => 'microscope',  'art2' => 'wheat-awn',  'title' => 'Food &amp; Nutrition', 'items' => ['HACCP', 'Quality Assurance', 'Traceability'],             'href' => '/services'],
                 ];
                 ?>
                 <div class="gx-industry-grid">
@@ -120,7 +120,7 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
                         <span class="gx-kicker">The DromoMinds Ecosystem</span>
                         <h2>One AI Platform.<br>Every Compliance Need.</h2>
                         <p>An interconnected ecosystem of powerful modules working together to ensure quality, compliance and trust.</p>
-                        <a href="products.php" class="gx-btn gx-btn-ghost">Explore All Modules <i class="fas fa-arrow-right"></i></a>
+                        <a href="/products" class="gx-btn gx-btn-ghost">Explore All Modules <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="gx-eco-hub">
@@ -164,15 +164,15 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
                         <span class="gx-kicker">Our Products</span>
                         <h2>Powerful Products.<br><span class="grad-blue">Smarter Compliance.</span></h2>
                         <p>Next-generation GxP applications built to simplify quality and accelerate digital transformation.</p>
-                        <a href="products.php" class="gx-btn gx-btn-outline">View All Products <i class="fas fa-arrow-right"></i></a>
+                        <a href="/products" class="gx-btn gx-btn-outline">View All Products <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <?php
                     $suite = [
-                        ['tone' => 'blue',   'name' => 'DromoQMS',      'desc' => 'AI-Powered Quality Management System',          'href' => 'products.php'],
-                        ['tone' => 'green',  'name' => 'DromoVALIDATE', 'desc' => 'End-to-End Validation Lifecycle Management',    'href' => 'validation.php'],
-                        ['tone' => 'purple', 'name' => 'DromoDOCS',     'desc' => 'Intelligent Document Management',               'href' => 'products.php'],
-                        ['tone' => 'orange', 'name' => 'DromoTRAIN',    'desc' => 'Training &amp; Competency Management',          'href' => 'products.php'],
-                        ['tone' => 'cyan',   'name' => 'DromoAUDIT',    'desc' => 'Audit &amp; Inspection Readiness',              'href' => 'products.php'],
+                        ['tone' => 'blue',   'name' => 'DromoQMS',      'desc' => 'AI-Powered Quality Management System',          'href' => '/products'],
+                        ['tone' => 'green',  'name' => 'DromoVALIDATE', 'desc' => 'End-to-End Validation Lifecycle Management',    'href' => '/validation'],
+                        ['tone' => 'purple', 'name' => 'DromoDOCS',     'desc' => 'Intelligent Document Management',               'href' => '/products'],
+                        ['tone' => 'orange', 'name' => 'DromoTRAIN',    'desc' => 'Training &amp; Competency Management',          'href' => '/products'],
+                        ['tone' => 'cyan',   'name' => 'DromoAUDIT',    'desc' => 'Audit &amp; Inspection Readiness',              'href' => '/products'],
                     ];
                     ?>
                     <div class="gx-suite">
@@ -221,41 +221,41 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
                     <div class="gx-f-col">
                         <h4>Products</h4>
                         <ul>
-                            <li><a href="products.php">DromoQMS</a></li>
-                            <li><a href="validation.php">DromoVALIDATE</a></li>
-                            <li><a href="products.php">DromoDOCS</a></li>
-                            <li><a href="products.php">DromoTRAIN</a></li>
-                            <li><a href="products.php">DromoAUDIT</a></li>
+                            <li><a href="/products">DromoQMS</a></li>
+                            <li><a href="/validation">DromoVALIDATE</a></li>
+                            <li><a href="/products">DromoDOCS</a></li>
+                            <li><a href="/products">DromoTRAIN</a></li>
+                            <li><a href="/products">DromoAUDIT</a></li>
                         </ul>
                     </div>
                     <div class="gx-f-col">
                         <h4>Solutions</h4>
                         <ul>
-                            <li><a href="validation.php">Quality Management</a></li>
-                            <li><a href="validation.php">Validation Management</a></li>
-                            <li><a href="validation.php">Document Management</a></li>
-                            <li><a href="validation.php">Training Management</a></li>
-                            <li><a href="validation.php">Audit Management</a></li>
+                            <li><a href="/validation">Quality Management</a></li>
+                            <li><a href="/validation">Validation Management</a></li>
+                            <li><a href="/validation">Document Management</a></li>
+                            <li><a href="/validation">Training Management</a></li>
+                            <li><a href="/validation">Audit Management</a></li>
                         </ul>
                     </div>
                     <div class="gx-f-col">
                         <h4>Resources</h4>
                         <ul>
-                            <li><a href="validation.php">Insights</a></li>
-                            <li><a href="validation.php">Whitepapers</a></li>
-                            <li><a href="validation.php">Case Studies</a></li>
-                            <li><a href="validation.php">CSA Transition Kit</a></li>
-                            <li><a href="contact.php">Help Center</a></li>
+                            <li><a href="/validation">Insights</a></li>
+                            <li><a href="/validation">Whitepapers</a></li>
+                            <li><a href="/validation">Case Studies</a></li>
+                            <li><a href="/validation">CSA Transition Kit</a></li>
+                            <li><a href="/contact">Help Center</a></li>
                         </ul>
                     </div>
                     <div class="gx-f-col">
                         <h4>Company</h4>
                         <ul>
-                            <li><a href="about.php">About Us</a></li>
-                            <li><a href="about.php">Leadership</a></li>
-                            <li><a href="services.php">Services</a></li>
-                            <li><a href="products.php">Portfolio</a></li>
-                            <li><a href="contact.php">Contact Us</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/about">Leadership</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/products">Portfolio</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="gx-f-news">

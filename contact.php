@@ -14,7 +14,7 @@ $page_desc = 'Get in touch with DromoMinds Solutions — Bangalore and Kolkata o
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-grid-lines"></div>
         <div class="container">
-            <div class="breadcrumb"><a href="index.php">Home</a> / Contact</div>
+            <div class="breadcrumb"><a href="/">Home</a> / Contact</div>
             <h1>Tell us what<br>you're building.</h1>
             <p>A project brief, a compliance question, or just an idea on a napkin — we reply within one business day.</p>
         </div>

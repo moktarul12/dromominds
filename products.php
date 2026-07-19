@@ -14,7 +14,7 @@ $page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding,
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-grid-lines"></div>
         <div class="container">
-            <div class="breadcrumb"><a href="index.php">Home</a> / Products</div>
+            <div class="breadcrumb"><a href="/">Home</a> / Products</div>
             <h1>Products built to run,<br>not just to demo.</h1>
             <p>Our portfolio spans fintech, life sciences, healthcare, manufacturing, education and events technology — including the CapitCap equity-crowdfunding platform.</p>
         </div>
@@ -58,7 +58,7 @@ $page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding,
                         <li><i class="fas fa-check"></i> ALCOA+ data integrity checks and audit trail review</li>
                         <li><i class="fas fa-check"></i> Cuts validation documentation time by up to 40%</li>
                     </ul>
-                    <a href="validation.php" class="btn btn-ink">Explore Validation Practice <i class="fas fa-arrow-right"></i></a>
+                    <a href="/validation" class="btn btn-ink">Explore Validation Practice <i class="fas fa-arrow-right"></i></a>
                     <div class="prod-stats">
                         <div><strong>Zero</strong><span>FDA 483 Findings</span></div>
                         <div><strong>40%</strong><span>Faster Validation</span></div>
@@ -198,7 +198,7 @@ $page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding,
                         <li><i class="fas fa-check"></i> Payment, GST invoicing and exhibitor KYC workflows</li>
                         <li><i class="fas fa-check"></i> Organiser dashboard for occupancy, revenue and check-ins</li>
                     </ul>
-                    <a href="stall-booking.php" class="btn btn-crimson">Try the Live Demo <i class="fas fa-arrow-right"></i></a>
+                    <a href="/stall-booking" class="btn btn-crimson">Try the Live Demo <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -210,7 +210,7 @@ $page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding,
             <div class="cta-panel reveal">
                 <h2>Want one of these — or something entirely new?</h2>
                 <p>Every product above started as a conversation. Yours can too.</p>
-                <a href="contact.php" class="btn btn-crimson">Talk to Our Team <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-crimson">Talk to Our Team <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

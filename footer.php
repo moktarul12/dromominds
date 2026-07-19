@@ -13,22 +13,22 @@
             <div>
                 <h4>Explore</h4>
                 <ul>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="products.php">Products</a></li>
-                    <li><a href="validation.php">Pharma Validation</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/validation">Pharma Validation</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Expertise</h4>
                 <ul>
-                    <li><a href="services.php#ai">AI &amp; Machine Learning</a></li>
-                    <li><a href="services.php#software">Software Engineering</a></li>
-                    <li><a href="services.php#mobile">Mobile Apps</a></li>
-                    <li><a href="services.php#design">UI/UX Design</a></li>
-                    <li><a href="validation.php">CSV / CSA Validation</a></li>
-                    <li><a href="validation.php#frameworks">GxP Compliance</a></li>
+                    <li><a href="/services#ai">AI &amp; Machine Learning</a></li>
+                    <li><a href="/services#software">Software Engineering</a></li>
+                    <li><a href="/services#mobile">Mobile Apps</a></li>
+                    <li><a href="/services#design">UI/UX Design</a></li>
+                    <li><a href="/validation">CSV / CSA Validation</a></li>
+                    <li><a href="/validation#frameworks">GxP Compliance</a></li>
                 </ul>
             </div>
             <div>

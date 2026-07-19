@@ -94,12 +94,12 @@ $resources_menu = [
 <header class="header" id="header">
     <div class="container">
         <div class="header-inner">
-            <a href="index.php" class="logo">
+            <a href="/" class="logo">
                 <img src="dm/logo1.png" alt="DromoMinds Solutions">
             </a>
             <nav class="nav main-nav">
                 <div class="nav-item static">
-                    <a href="validation.php" class="<?php echo nav_active(['validation', 'services']); ?>">Expertise <i class="fas fa-chevron-down caret"></i></a>
+                    <a href="/validation" class="<?php echo nav_active(['validation', 'services']); ?>">Expertise <i class="fas fa-chevron-down caret"></i></a>
                     <div class="nav-mega">
                         <div class="dd-panel">
                             <div class="mega-grid">
@@ -116,7 +116,7 @@ $resources_menu = [
                     </div>
                 </div>
                 <div class="nav-item">
-                    <a href="products.php" class="<?php echo nav_active(['products', 'stall-booking']); ?>">Products <i class="fas fa-chevron-down caret"></i></a>
+                    <a href="/products" class="<?php echo nav_active(['products', 'stall-booking']); ?>">Products <i class="fas fa-chevron-down caret"></i></a>
                     <div class="nav-dd">
                         <div class="dd-panel">
                             <?php foreach ($products_menu as $it): ?>
@@ -126,7 +126,7 @@ $resources_menu = [
                     </div>
                 </div>
                 <div class="nav-item">
-                    <a href="validation.php#sectors" class="nav-link">Our Clients <i class="fas fa-chevron-down caret"></i></a>
+                    <a href="/validation#sectors" class="nav-link">Our Clients <i class="fas fa-chevron-down caret"></i></a>
                     <div class="nav-dd">
                         <div class="dd-panel dd-panel-wide">
                             <div class="dd-grid-3">
@@ -143,7 +143,7 @@ $resources_menu = [
                     </div>
                 </div>
                 <div class="nav-item">
-                    <a href="validation.php#case-studies" class="nav-link">Resources <i class="fas fa-chevron-down caret"></i></a>
+                    <a href="/validation#case-studies" class="nav-link">Resources <i class="fas fa-chevron-down caret"></i></a>
                     <div class="nav-dd">
                         <div class="dd-panel">
                             <?php foreach ($resources_menu as $it): ?>
@@ -152,17 +152,17 @@ $resources_menu = [
                         </div>
                     </div>
                 </div>
-                <a href="about.php" class="<?php echo nav_active('about'); ?>">About Us</a>
+                <a href="/about" class="<?php echo nav_active('about'); ?>">About Us</a>
             </nav>
             <div class="header-cta">
-                <a href="contact.php" class="btn btn-crimson">Talk to an Expert <i class="fas fa-arrow-right"></i></a>
+                <a href="/contact" class="btn btn-crimson">Talk to an Expert <i class="fas fa-arrow-right"></i></a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
-    <a href="index.php">Home</a>
+    <a href="/">Home</a>
     <h5>Expertise</h5>
     <?php foreach ($expertise_menu as $group => $items): ?>
     <span class="mm-group"><?php echo $group; ?></span>
@@ -183,6 +183,6 @@ $resources_menu = [
     <?php foreach ($resources_menu as $it): ?>
     <a href="<?php echo $it[1]; ?>" class="sub"<?php echo $it[2] ? ' target="_blank" rel="noopener"' : ''; ?>><?php echo $it[0]; ?></a>
     <?php endforeach; ?>
-    <a href="about.php">About Us</a>
-    <a href="contact.php">Contact</a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact</a>
 </div>
