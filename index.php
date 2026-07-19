@@ -28,10 +28,6 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
                         <span class="gx-overline">AI-Powered GxP Compliance</span>
                         <h1>Intelligent Compliance.<br><span>Trusted Quality.</span></h1>
                         <p>The AI-powered GxP platform for Pharma, Biotech,<br>Medical Devices and Chemicals.</p>
-                        <div class="gx-actions">
-                            <a href="validation.php" class="gx-btn gx-btn-grad">Explore Platform <i class="fas fa-arrow-right"></i></a>
-                            <a href="contact.php" class="gx-btn gx-btn-ghost"><i class="far fa-circle-play"></i> Watch Demo</a>
-                        </div>
                         <div class="gx-hero-stats">
                             <div><i class="fas fa-building-user"></i><p><strong><span data-count="200">0</span>+</strong><small>Global Clients</small></p></div>
                             <div><i class="fas fa-shield-halved"></i><p><strong><span data-count="98">0</span>%</strong><small>Compliance Rate</small></p></div>

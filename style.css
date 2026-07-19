@@ -1668,7 +1668,7 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     font-size: 16.5px;
     line-height: 1.7;
     color: #a9b8dd;
-    margin-bottom: 34px;
+    margin-bottom: 48px;
 }
 .gx-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
 
