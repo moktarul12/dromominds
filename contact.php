@@ -20,6 +20,32 @@ $page_desc = 'Get in touch with DromoMinds Solutions — Bangalore and Kolkata o
         </div>
     </section>
 
+    <!-- ============ CO-FOUNDERS ============ -->
+    <section class="section section-dark" style="padding-bottom: 60px;">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="kicker">Meet the Co-Founders</div>
+                <h2 class="section-title">You'll be talking to the people who built the company.</h2>
+            </div>
+            <div class="team-grid">
+                <article class="team-card reveal">
+                    <div class="team-avatar">MA</div>
+                    <div class="team-meta">Co-Founder &middot; Software Development</div>
+                    <h3>M. Anam</h3>
+                    <p>20+ years of total experience in multinational companies, leading software development, technology delivery and dependable digital platforms.</p>
+                    <div class="team-exp"><strong>20+</strong><span>Years in MNC environments</span></div>
+                </article>
+                <article class="team-card reveal reveal-d1">
+                    <div class="team-avatar">SA</div>
+                    <div class="team-meta">Co-Founder &middot; Pharma &amp; Compliance</div>
+                    <h3>S. M. Anam</h3>
+                    <p>15+ years of pharmaceutical industry experience across regulated operations, validation, quality systems and audit-readiness programmes.</p>
+                    <div class="team-exp"><strong>15+</strong><span>Years in pharma</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <div class="contact-wrap reveal">

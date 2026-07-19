@@ -5,10 +5,9 @@
                 <img src="dm/logo1.png" alt="DromoMinds Solutions">
                 <p>AI development, IT engineering and GxP pharma validation — delivered from Bangalore and Kolkata to clients across the globe. We build products that work and compliance that holds.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/dromominds-solutions/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919748386443" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://dromominds.in" target="_blank" rel="noopener" aria-label="Validation Practice Website"><i class="fas fa-globe"></i></a>
                 </div>
             </div>
             <div>
@@ -54,4 +53,8 @@
     </div>
     <div class="footer-wordmark">DROMOMINDS</div>
 </footer>
+<div class="float-dock">
+    <a href="https://www.linkedin.com/company/dromominds-solutions/" target="_blank" rel="noopener" class="float-btn linkedin" aria-label="DromoMinds on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/919748386443?text=Hi%20DromoMinds%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="float-btn whatsapp" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
 <script src="assets/js/main.js"></script>

@@ -59,14 +59,14 @@ $page_desc = 'DromoMinds Solutions — an AI, IT and pharma validation company w
             <div class="team-grid">
                 <article class="team-card reveal">
                     <div class="team-avatar">MA</div>
-                    <div class="team-meta">Software Development</div>
+                    <div class="team-meta">Co-Founder &middot; Software Development</div>
                     <h3>M. Anam</h3>
                     <p>20+ years of total experience in multinational companies, with deep expertise in software development, technology delivery and building dependable digital platforms.</p>
                     <div class="team-exp"><strong>20+</strong><span>Years in MNC environments</span></div>
                 </article>
                 <article class="team-card reveal reveal-d1">
                     <div class="team-avatar">SA</div>
-                    <div class="team-meta">Pharma &amp; Compliance</div>
+                    <div class="team-meta">Co-Founder &middot; Pharma &amp; Compliance</div>
                     <h3>S. M. Anam</h3>
                     <p>15+ years of pharmaceutical industry experience spanning regulated operations, validation, quality systems and practical audit-readiness programmes.</p>
                     <div class="team-exp"><strong>15+</strong><span>Years in pharma</span></div>
