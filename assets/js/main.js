@@ -1,407 +1,177 @@
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Braintech - Technology & IT Solutions HTML Template
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
-(function($) {
-	"use strict";
-    // sticky menu
-    var header = $('.menu-sticky');
-    var win = $(window);
+/* DromoMinds Solutions — site scripts */
 
-    win.on('scroll', function() {
-       var scroll = win.scrollTop();
-       if (scroll < 1) {
-           header.removeClass("sticky");
-       } else {
-           header.addClass("sticky");
-       }
+// ---------- Header scroll state ----------
+const header = document.getElementById('header');
+if (header) {
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+}
 
-        $("section").each(function() {
-        var elementTop = $(this).offset().top - $('#rs-header').outerHeight();
-            if(scroll >= elementTop) {
-                $(this).addClass('loaded');
-            }
-        });
-
+// ---------- Mobile menu ----------
+const mobileToggle = document.getElementById('mobileToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        mobileToggle.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
+        document.body.style.overflow = open ? 'hidden' : '';
     });
-	
-    //window load
-   $(window).on( 'load', function() {
-        $("#loading").delay(1500).fadeOut(500);
-        $("#loading-center").on( 'click', function() {
-        $("#loading").fadeOut(500);
-        })
-    })
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        document.body.style.overflow = '';
+    }));
+}
 
-   // Parallax Stuff
-   if ($("#stuff").length) {
-       var stuff = $('#stuff').get(0);
-       var parallaxInstance = new Parallax(stuff);
-   }
-
-   // onepage nav
-   var navclose = $('#onepage-menu');
-   if(navclose.length){
-       $(".nav-menu li a").on("click", function () {
-           if ($(".showhide").is(":visible")) {
-               $(".showhide").trigger("click");
-           }
-       });
-       
-       if ($.fn.onePageNav) {
-           $(".nav-menu").onePageNav({
-               currentClass: "current-menu-item"
-           });
-       }
-   }
-
-   //Testimonials Slider
-    var sliderfor = $('.slider-for');
-    if(sliderfor.length){
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav',
-             autoplay: true
-        });
-    }
-    var slidernav = $('.slider-nav');
-    if(slidernav.length){
-        $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true,
-        });
-    }
- 
-    // collapse hidden  
-     var navMain = $(".navbar-collapse");
-     navMain.on("click", "a:not([data-toggle])", null, function () {
-         navMain.collapse('hide');
-     });  
-
-    // video 
-    if ($('.player').length) {
-        $(".player").YTPlayer();
-    }
-
-    // wow init
-    new WOW().init();
-    
-    // image loaded portfolio init
-    var gridfilter = $('.grid');
-        if(gridfilter.length){
-        $('.grid').imagesLoaded(function() {
-            $('.gridFilter').on('click', 'button', function() {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.grid-item',
-                }
-            });
-        });
-    }   
-        
-    // project Filter
-    if ($('.gridFilter button').length) {
-        var projectfiler = $('.gridFilter button');
-            if(projectfiler.length){
-            $('.gridFilter button').on('click', function(event) {
-                $(this).siblings('.active').removeClass('active');
-                $(this).addClass('active');
-                event.preventDefault();
-            });
+// ---------- Reveal on scroll ----------
+const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            revealObserver.unobserve(e.target);
         }
-    }
-    
-    // magnificPopup init
-    var imagepopup = $('.image-popup');
-    if(imagepopup.length){
-        $('.image-popup').magnificPopup({
-            type: 'image',
-            callbacks: {
-                beforeOpen: function() {
-                   this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure animated zoomInDown');
-                }
-            },
-            gallery: {
-                enabled: true
-            }
-        });
-    }
-
-    // Get a quote popup
-    var popupquote = $('.popup-quote');
-    if(popupquote.length){
-        $('.popup-quote').magnificPopup({
-            type: 'inline',
-            preloader: false,
-            focus: '#qname',
-            removalDelay: 500,
-            callbacks: {
-                beforeOpen: function() {
-                    this.st.mainClass = this.st.el.attr('data-effect');
-                    if(win.width() < 800) {
-                        this.st.focus = false;
-                    } else {
-                        this.st.focus = '#qname';
-                    }
-                }
-            }
-        });
-    }
-    
-    //preloader
-    $(window).on('load', function() {
-        $("#loader").delay(1000).fadeOut(500);
-    })
-
-    //Videos popup jQuery 
-    var popupvideos = $('.popup-videos');
-    if(popupvideos.length){
-        $('.popup-videos').magnificPopup({
-            disableOn: 10,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        }); 
-    }
-
-    //CountDown Timer
-    var CountTimer = $('.CountDownTimer');
-    if(CountTimer.length){ 
-        $(".CountDownTimer").TimeCircles({
-            fg_width: 0.030,
-            bg_width: 0.8,
-            circle_bg_color: "#eeeeee",
-            circle_fg_color: "#eeeeee",
-            time: {
-                Days:{
-                    color: "#032390"
-                },
-                Hours:{
-                    color: "#032390"
-                },
-                Minutes:{
-                    color: "#032390"
-                },
-                Seconds:{
-                    color: "#032390"
-                }
-            }
-        }); 
-    }
-
-    var pieChart = $('.progress-pie-part');
-    if(pieChart.length) {
-        $('.chart').easyPieChart({
-            size: 172,
-            barColor: "#032390",
-            scaleLength: 0,
-            lineWidth: 8,
-            trackColor: "#eeeeee",
-            lineCap: "circle",
-            animate: 2000,
-        });
-    }
-    
-    /*-------------------------------------
-        OwlCarousel
-    -------------------------------------*/
-    $('.rs-carousel').each(function() {
-        var owlCarousel = $(this),
-        loop = owlCarousel.data('loop'),
-        items = owlCarousel.data('items'),
-        margin = owlCarousel.data('margin'),
-        stagePadding = owlCarousel.data('stage-padding'),
-        autoplay = owlCarousel.data('autoplay'),
-        autoplayTimeout = owlCarousel.data('autoplay-timeout'),
-        smartSpeed = owlCarousel.data('smart-speed'),
-        dots = owlCarousel.data('dots'),
-        nav = owlCarousel.data('nav'),
-        navSpeed = owlCarousel.data('nav-speed'),
-        xsDevice = owlCarousel.data('mobile-device'),
-        xsDeviceNav = owlCarousel.data('mobile-device-nav'),
-        xsDeviceDots = owlCarousel.data('mobile-device-dots'),
-        smDevice = owlCarousel.data('ipad-device'),
-        smDeviceNav = owlCarousel.data('ipad-device-nav'),
-        smDeviceDots = owlCarousel.data('ipad-device-dots'),
-        smDevice2 = owlCarousel.data('ipad-device2'),
-        smDeviceNav2 = owlCarousel.data('ipad-device-nav2'),
-        smDeviceDots2 = owlCarousel.data('ipad-device-dots2'),
-        mdDevice = owlCarousel.data('md-device'),
-        centerMode = owlCarousel.data('center-mode'),
-        HoverPause = owlCarousel.data('hoverpause'),
-        mdDeviceNav = owlCarousel.data('md-device-nav'),
-        mdDeviceDots = owlCarousel.data('md-device-dots');
-        owlCarousel.owlCarousel({
-            loop: (loop ? true : false),
-            items: (items ? items : 4),
-            lazyLoad: true,
-            center: (centerMode ? true : false),
-            autoplayHoverPause: (HoverPause ? true : false),
-            margin: (margin ? margin : 0),
-            //stagePadding: (stagePadding ? stagePadding : 0),
-            autoplay: (autoplay ? true : false),
-            autoplayTimeout: (autoplayTimeout ? autoplayTimeout : 1000),
-            smartSpeed: (smartSpeed ? smartSpeed : 250),
-            dots: (dots ? true : false),
-            nav: (nav ? true : false),
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            navSpeed: (navSpeed ? true : false),
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: (xsDevice ? xsDevice : 1),
-                    nav: (xsDeviceNav ? true : false),
-                    dots: (xsDeviceDots ? true : false),
-                    center: false,
-                },
-                768: {
-                    items: (smDevice2 ? smDevice2 : 2),
-                    nav: (smDeviceNav2 ? true : false),
-                    dots: (smDeviceDots2 ? true : false),
-                    center: false,
-                },
-                992: {
-                    items: (smDevice ? smDevice : 3),
-                    nav: (smDeviceNav ? true : false),
-                    dots: (smDeviceDots ? true : false),
-                    center: false,
-                },
-                1200: {
-                    items: (mdDevice ? mdDevice : 4),
-                    nav: (mdDeviceNav ? true : false),
-                    dots: (mdDeviceDots ? true : false),
-                }
-            }
-        });
     });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // Skill bar 
-    var skillbar = $('.skillbar');
-    if(skillbar.length) {
-        $('.skillbar').skillBars({  
-            from: 0,    
-            speed: 4000,    
-            interval: 100,  
-            decimals: 0,    
-        });
+// ---------- Animated counters ----------
+function animateCount(el) {
+    const target = parseInt(el.dataset.count, 10);
+    const dur = 1600;
+    const start = performance.now();
+    function tick(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.childNodes[0].nodeValue = Math.round(target * eased);
+        if (p < 1) requestAnimationFrame(tick);
     }
-		
-    // Counter Up
-    var counter = $('.rs-count');
-    if(counter.length) {  
-        $('.rs-count').counterUp({
-            delay: 20,
-            time: 1500
-        });
+    requestAnimationFrame(tick);
+}
+const countObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            animateCount(e.target);
+            countObserver.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
+
+// ---------- Contact / generic form ----------
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        alert('Thank you! Your message has been received — we will get back to you within one business day.');
+        form.reset();
+    });
+});
+
+// ============================================================
+// StallSpot — interactive floor plan demo
+// ============================================================
+const stallGrid = document.getElementById('stallGrid');
+if (stallGrid) {
+    const COLS = 8;
+    const ROWS = 6;
+    const PRICES = { premium: 45000, standard: 25000, economy: 15000 };
+    // deterministic set of pre-booked stalls so the map looks alive
+    const BOOKED = new Set(['A2', 'A5', 'B7', 'C1', 'C4', 'D3', 'D8', 'E6', 'F2', 'F5', 'B3', 'E1']);
+
+    const selected = new Map();
+    const ssRows = document.getElementById('ssRows');
+    const ssTotal = document.getElementById('ssTotal');
+    const ssBook = document.getElementById('ssBook');
+    const fmt = n => '₹' + n.toLocaleString('en-IN');
+
+    function tierFor(rowIdx) {
+        if (rowIdx === 0) return 'premium';   // front row faces the stage
+        if (rowIdx <= 3) return 'standard';
+        return 'economy';
     }
-    
-    // scrollTop init	
-    var totop = $('#scrollUp');    
-    win.on('scroll', function() {
-        if (win.scrollTop() > 150) {
-            totop.fadeIn();
+
+    function renderSummary() {
+        ssRows.innerHTML = '';
+        if (selected.size === 0) {
+            ssRows.innerHTML = '<div class="ss-empty">No stalls selected yet — tap any available stall on the floor plan.</div>';
         } else {
-            totop.fadeOut();
+            [...selected.entries()].sort().forEach(([id, tier]) => {
+                const row = document.createElement('div');
+                row.className = 'ss-row';
+                row.innerHTML = `<span>Stall ${id}${tier === 'premium' ? '<em>PREMIUM</em>' : ''}</span>` +
+                    `<span>${fmt(PRICES[tier])} <button class="rm" data-id="${id}" aria-label="Remove ${id}"><i class="fas fa-xmark"></i></button></span>`;
+                ssRows.appendChild(row);
+            });
         }
-    });
-    totop.on('click', function() {
-        $("html,body").animate({
-            scrollTop: 0
-        }, 500)
+        const total = [...selected.values()].reduce((s, t) => s + PRICES[t], 0);
+        ssTotal.textContent = fmt(total);
+    }
+
+    ssRows.addEventListener('click', e => {
+        const btn = e.target.closest('.rm');
+        if (!btn) return;
+        selected.delete(btn.dataset.id);
+        const cell = stallGrid.querySelector(`[data-id="${btn.dataset.id}"]`);
+        if (cell) cell.classList.remove('selected');
+        renderSummary();
     });
 
-    //canvas menu
-    var navexpander = $('#nav-expander');
-    if(navexpander.length){
-        $('#nav-expander, #nav-close, .offwrap').on('click',function(e){
-            e.preventDefault();
-            $('body').toggleClass('nav-expanded');
+    for (let r = 0; r < ROWS; r++) {
+        const rowLetter = String.fromCharCode(65 + r);
+        for (let c = 1; c <= COLS; c++) {
+            const id = rowLetter + c;
+            const tier = tierFor(r);
+            const cell = document.createElement('button');
+            cell.type = 'button';
+            cell.className = 'stall' + (tier === 'premium' ? ' premium' : '');
+            cell.dataset.id = id;
+            cell.textContent = id;
+            if (BOOKED.has(id)) {
+                cell.classList.add('booked');
+                cell.disabled = true;
+                cell.title = 'Already booked';
+            } else {
+                cell.title = `Stall ${id} — ${tier} — ${fmt(PRICES[tier])}`;
+                cell.addEventListener('click', () => {
+                    if (selected.has(id)) {
+                        selected.delete(id);
+                        cell.classList.remove('selected');
+                    } else {
+                        selected.set(id, tier);
+                        cell.classList.add('selected');
+                    }
+                    renderSummary();
+                });
+            }
+            stallGrid.appendChild(cell);
+        }
+        // aisle after rows B and D
+        if (r === 1 || r === 3) {
+            const aisle = document.createElement('div');
+            aisle.className = 'stall-aisle';
+            stallGrid.appendChild(aisle);
+        }
+    }
+
+    ssBook.addEventListener('click', () => {
+        if (selected.size === 0) {
+            alert('Pick at least one available stall on the floor plan first.');
+            return;
+        }
+        const ids = [...selected.keys()].sort().join(', ');
+        const total = [...selected.values()].reduce((s, t) => s + PRICES[t], 0);
+        alert(`Demo booking confirmed!\n\nStalls: ${ids}\nTotal: ${fmt(total)}\n\nIn the full product this proceeds to payment, GST invoicing and instant confirmation.`);
+        selected.forEach((_, id) => {
+            const cell = stallGrid.querySelector(`[data-id="${id}"]`);
+            if (cell) {
+                cell.classList.remove('selected');
+                cell.classList.add('booked');
+                cell.disabled = true;
+            }
         });
-    }
-
-    // View Course
-    $('.course-view-part .view-icons .view-grid').on('click',function(e){
-        e.preventDefault();
-        $('.rs-popular-courses').removeClass('list-view');
+        selected.clear();
+        renderSummary();
     });
-    $('.course-view-part .view-icons .view-list').on('click',function(e){
-        e.preventDefault();
-        $('.rs-popular-courses').addClass('list-view');
-    });
-    
-	
-	/*----------------------------
-    single-productjs active
-    ------------------------------ */
-    var singleproductimage = $('.single-product-image');
-    if(singleproductimage.length){
-        $('.single-product-image').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.single-product-nav'
-        });
-    }
 
-    var singleproductnav = $('.single-product-nav');
-    if(singleproductnav.length){
-        $('.single-product-nav').slick({
-            slidesToShow: 3,
-            asNavFor: '.single-product-image',
-            dots: false,
-            focusOnSelect: true,
-            centerMode:false,
-            responsive: [
-                {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 2
-                  }
-                },
-                {
-                  breakpoint: 591,
-                  settings: {
-                    slidesToShow: 2
-                  }
-                }
-              ] 
-        });
-    }
-
-    // categories btn
-    $('.cat-menu-inner').hide();
-    $('.cat-btn').on('click',function(){
-        $('.cat-menu-inner').slideToggle();
-    })
-
-    var tilt = $('.js-tilt');
-    if(tilt.length) {
-        const tilt = $('.js-tilt').tilt();
-    }
-    
-
-})(jQuery);
+    renderSummary();
+}
