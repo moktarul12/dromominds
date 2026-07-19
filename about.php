@@ -37,7 +37,7 @@ $page_desc = 'DromoMinds Solutions — an AI, IT and pharma validation company w
                     <a href="contact.php" class="btn btn-crimson">Work With Us <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1">
-                    <div class="badge-wall" style="background: var(--ink); border-radius: var(--radius-lg); padding: 28px;">
+                    <div class="badge-wall glow-panel">
                         <div class="badge-tile"><h4><i class="fas fa-location-dot"></i> Bangalore HQ</h4><p>#415 KHB Colony, Koramangala 5th Block, Bangalore 560095, Karnataka.</p></div>
                         <div class="badge-tile"><h4><i class="fas fa-location-dot"></i> Kolkata Office</h4><p>12 Alimuddin Street, Park Street, Kolkata 700016, West Bengal.</p></div>
                         <div class="badge-tile"><h4><i class="fas fa-people-group"></i> 50+ Engineers</h4><p>AI specialists, full-stack developers and CSV consultants.</p></div>

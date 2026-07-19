@@ -1,6 +1,6 @@
 <?php
-$page_title = 'DromoMinds Solutions | AI Development, IT Services & Pharma Validation';
-$page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP pharma validation programmes from Bangalore and Kolkata. Explore our product suite including StallSpot exhibition stall booking.';
+$page_title = 'DromoMinds Solutions | Pharma Validation, AI Development & IT Services';
+$page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, GAMP 5, FDA 21 CFR Part 11 — alongside AI products and custom software from Bangalore and Kolkata.';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,51 +14,53 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
     <section class="hero" id="home">
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
         <div class="hero-grid-lines"></div>
+        <div class="hero-noise"></div>
         <div class="container">
             <div class="hero-inner">
                 <div>
-                    <div class="hero-eyebrow"><span class="dot"></span> Bangalore &middot; Kolkata &middot; Serving 15+ Countries</div>
-                    <h1>We build <span class="stroke">intelligent</span> products &amp; <span class="mark">audit-ready</span> systems.</h1>
-                    <p class="lead">DromoMinds Solutions is where AI engineering meets regulatory discipline. From exhibition stall booking platforms to FDA-grade pharma validation — 750+ projects shipped, zero excuses.</p>
+                    <div class="hero-eyebrow"><span class="dot"></span> GAMP 5 &middot; FDA 21 CFR Part 11 &middot; EU Annex 11</div>
+                    <h1><span class="mark">Pharma validation</span> that passes audits. <span class="stroke">Software</span> that ships.</h1>
+                    <p class="lead">DromoMinds Solutions is a GxP compliance and validation practice with a full engineering team behind it. CSV/CSA, equipment qualification and data integrity — plus the AI and software products to match.</p>
                     <div class="hero-actions">
-                        <a href="products.php" class="btn btn-crimson">Explore Our Products <i class="fas fa-arrow-right"></i></a>
-                        <a href="contact.php" class="btn btn-ghost-light">Start a Project</a>
+                        <a href="validation.php" class="btn btn-crimson">Explore Pharma Validation <i class="fas fa-arrow-right"></i></a>
+                        <a href="products.php" class="btn btn-ghost-light">See Our Products</a>
                     </div>
                     <div class="hero-metrics">
                         <div class="hero-metric">
+                            <div class="num">Zero</div>
+                            <div class="lbl">FDA 483 Findings</div>
+                        </div>
+                        <div class="hero-metric">
+                            <div class="num" data-count="100">0<span>%</span></div>
+                            <div class="lbl">Audit Success Rate</div>
+                        </div>
+                        <div class="hero-metric">
                             <div class="num" data-count="750">0<span>+</span></div>
                             <div class="lbl">Projects Delivered</div>
-                        </div>
-                        <div class="hero-metric">
-                            <div class="num" data-count="75">0<span>+</span></div>
-                            <div class="lbl">AI Solutions Built</div>
-                        </div>
-                        <div class="hero-metric">
-                            <div class="num" data-count="200">0<span>+</span></div>
-                            <div class="lbl">Happy Clients</div>
                         </div>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="hv-card">
-                        <div class="ic c"><i class="fas fa-landmark"></i></div>
+                        <div class="ic c"><i class="fas fa-clipboard-check"></i></div>
+                        <div><h4>CSV Validation</h4><p>IQ/OQ/PQ executed — zero 483 findings</p></div>
+                        <i class="fas fa-circle-check tick"></i>
+                    </div>
+                    <div class="hv-card hv-offset-1">
+                        <div class="ic t"><i class="fas fa-database"></i></div>
+                        <div><h4>Data Integrity</h4><p>ALCOA+ assessment complete — audit-ready</p></div>
+                        <i class="fas fa-circle-check tick"></i>
+                    </div>
+                    <div class="hv-card hv-offset-2">
+                        <div class="ic g"><i class="fas fa-landmark"></i></div>
                         <div><h4>CapitCap Platform</h4><p>Equity crowdfunding for investors and issuers</p></div>
                         <i class="fas fa-circle-check tick"></i>
                     </div>
                     <div class="hv-card hv-offset-1">
-                        <div class="ic t"><i class="fas fa-clipboard-check"></i></div>
-                        <div><h4>CSV Validation</h4><p>IQ/OQ/PQ executed — zero 483 findings</p></div>
-                        <i class="fas fa-circle-check tick"></i>
-                    </div>
-                    <div class="hv-card hv-offset-2">
                         <div class="ic v"><i class="fas fa-brain"></i></div>
                         <div><h4>AI Model Deployed</h4><p>Diagnosis engine at 95% accuracy</p></div>
-                        <i class="fas fa-circle-check tick"></i>
-                    </div>
-                    <div class="hv-card hv-offset-1">
-                        <div class="ic g"><i class="fas fa-chart-line"></i></div>
-                        <div><h4>Trading Bot Live</h4><p>$50M+ volume traded, 99.9% uptime</p></div>
                         <i class="fas fa-circle-check tick"></i>
                     </div>
                 </div>
@@ -69,13 +71,44 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
     <!-- ============ MARQUEE ============ -->
     <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-            <span>AI Development</span><span>Stall Booking Platform</span><span>Pharma CSV Validation</span><span>Machine Learning</span><span>Mobile Apps</span><span>GAMP 5</span><span>FDA 21 CFR Part 11</span><span>UI/UX Design</span>
-            <span>AI Development</span><span>Stall Booking Platform</span><span>Pharma CSV Validation</span><span>Machine Learning</span><span>Mobile Apps</span><span>GAMP 5</span><span>FDA 21 CFR Part 11</span><span>UI/UX Design</span>
+            <span>Pharma CSV Validation</span><span>GAMP 5</span><span>FDA 21 CFR Part 11</span><span>Data Integrity — ALCOA+</span><span>Equipment Qualification</span><span>AI Development</span><span>Software Engineering</span><span>Stall Booking Platform</span>
+            <span>Pharma CSV Validation</span><span>GAMP 5</span><span>FDA 21 CFR Part 11</span><span>Data Integrity — ALCOA+</span><span>Equipment Qualification</span><span>AI Development</span><span>Software Engineering</span><span>Stall Booking Platform</span>
         </div>
     </div>
 
+    <!-- ============ VALIDATION SPLIT ============ -->
+    <section class="section" id="validation">
+        <div class="container">
+            <div class="split">
+                <div class="reveal">
+                    <div class="kicker">Our Flagship Practice</div>
+                    <h2 class="section-title">Audit readiness. Regulatory confidence.</h2>
+                    <p class="section-sub">Pharma validation is what DromoMinds is known for. Ensure data integrity, accelerate validation cycles and stay inspection-ready with our end-to-end compliance practice.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> GxP-focused compliance delivery with a risk-based GAMP 5 approach</li>
+                        <li><i class="fas fa-check"></i> FDA + EU regulatory alignment — 21 CFR Part 11 and Annex 11</li>
+                        <li><i class="fas fa-check"></i> Full lifecycle: URS, FS, DS, RTM through IQ / OQ / PQ</li>
+                        <li><i class="fas fa-check"></i> Validation timelines reduced by up to 40% via template-driven methods</li>
+                        <li><i class="fas fa-check"></i> Zero FDA 483 findings across our validation engagements</li>
+                    </ul>
+                    <a href="validation.php" class="btn btn-crimson">Explore Validation Practice <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="reveal reveal-d1">
+                    <div class="badge-wall glow-panel">
+                        <div class="badge-tile"><h4><i class="fas fa-shield-halved"></i> FDA 21 CFR Part 11</h4><p>Electronic records, signatures and audit trails.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-file-shield"></i> EU Annex 11</h4><p>Computerised systems governance and lifecycle docs.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-diagram-project"></i> GAMP 5</h4><p>Risk-based approach to compliant GxP systems.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-database"></i> ALCOA+</h4><p>Data integrity principles, end to end.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-certificate"></i> ISO 9001 / 13485</h4><p>Quality management systems certification support.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-flask"></i> GCP &amp; GLP</h4><p>Good clinical and laboratory practice adherence.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ============ SERVICES ============ -->
-    <section class="section" id="services">
+    <section class="section section-white" id="services">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">What We Do</div>
@@ -83,47 +116,47 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
                 <p class="section-sub">Most IT firms can't speak to FDA inspectors. Most compliance consultancies can't ship software. DromoMinds does both — and designs it beautifully.</p>
             </div>
             <div class="svc-grid">
-                <div class="svc-card reveal" data-num="01">
+                <div class="svc-card svc-featured reveal" data-num="01">
+                    <div class="svc-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Pharma CSV Validation</h3>
+                    <p>GAMP 5 computerized system validation, data integrity and audit readiness for life sciences — our flagship practice.</p>
+                    <div class="svc-tags"><span>CSV / CSA</span><span>21 CFR Part 11</span><span>ALCOA+</span><span>Audit Support</span></div>
+                    <a href="validation.php" class="svc-link">Explore validation <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="svc-card reveal reveal-d1" data-num="02">
                     <div class="svc-icon"><i class="fas fa-brain"></i></div>
                     <h3>AI &amp; Machine Learning</h3>
                     <p>Custom models, NLP, computer vision and predictive analytics that move from notebook to production.</p>
                     <div class="svc-tags"><span>LLM Apps</span><span>Computer Vision</span><span>Chatbots</span><span>Forecasting</span></div>
                     <a href="services.php#ai" class="svc-link">Explore AI services <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="svc-card reveal reveal-d1" data-num="02">
+                <div class="svc-card reveal reveal-d2" data-num="03">
                     <div class="svc-icon"><i class="fas fa-code"></i></div>
                     <h3>Software Engineering</h3>
                     <p>Web platforms, APIs and legacy modernisation built with modern stacks and shipped on schedule.</p>
                     <div class="svc-tags"><span>Web Platforms</span><span>APIs</span><span>Cloud</span><span>Modernisation</span></div>
                     <a href="services.php#software" class="svc-link">Explore engineering <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="svc-card reveal reveal-d2" data-num="03">
+                <div class="svc-card reveal" data-num="04">
                     <div class="svc-icon"><i class="fas fa-mobile-screen"></i></div>
                     <h3>Mobile Apps</h3>
                     <p>Native iOS, Android and cross-platform apps that users keep on their home screens.</p>
                     <div class="svc-tags"><span>iOS</span><span>Android</span><span>Flutter</span><span>React Native</span></div>
                     <a href="services.php#mobile" class="svc-link">Explore mobile <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="svc-card reveal" data-num="04">
+                <div class="svc-card reveal reveal-d1" data-num="05">
                     <div class="svc-icon"><i class="fas fa-pen-ruler"></i></div>
                     <h3>UI/UX Design</h3>
                     <p>Interfaces designed around real user behaviour — brand identity, product design and design systems.</p>
                     <div class="svc-tags"><span>Product Design</span><span>Branding</span><span>Design Systems</span></div>
                     <a href="services.php#design" class="svc-link">Explore design <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="svc-card reveal reveal-d1" data-num="05">
+                <div class="svc-card reveal reveal-d2" data-num="06">
                     <div class="svc-icon"><i class="fas fa-bullhorn"></i></div>
                     <h3>Digital Marketing</h3>
                     <p>SEO, paid media and content programmes measured in pipeline, not impressions.</p>
                     <div class="svc-tags"><span>SEO</span><span>PPC</span><span>Social</span><span>Content</span></div>
                     <a href="services.php#marketing" class="svc-link">Explore marketing <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="svc-card reveal reveal-d2" data-num="06">
-                    <div class="svc-icon"><i class="fas fa-clipboard-check"></i></div>
-                    <h3>Pharma CSV Validation</h3>
-                    <p>GAMP 5 computerized system validation, data integrity and audit readiness for life sciences.</p>
-                    <div class="svc-tags"><span>CSV / CSA</span><span>21 CFR Part 11</span><span>ALCOA+</span><span>Audit Support</span></div>
-                    <a href="validation.php" class="svc-link">Explore validation <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -138,19 +171,19 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
                 <p class="section-sub">Not just services — real products running in the wild, from exhibition halls to hospital wards.</p>
             </div>
             <div class="bento">
-                <a href="products.php#capitcap" class="bento-card bento-8 bg-capit reveal">
-                    <span class="b-tag">Featured Project &middot; Fintech</span>
-                    <i class="fas fa-landmark b-icon"></i>
-                    <h3>CapitCap — Boutique Equity Crowdfunding</h3>
-                    <p>A full digital platform connecting vetted investors with businesses and entrepreneurs, supporting campaign discovery, investor onboarding and complex Reg CF fundraising workflows.</p>
-                    <span class="b-cta">Explore the CapitCap project <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="validation.php" class="bento-card bento-4 bg-valid reveal reveal-d1">
-                    <span class="b-tag">Life Sciences</span>
+                <a href="validation.php" class="bento-card bento-8 bg-valid reveal">
+                    <span class="b-tag">Flagship &middot; Life Sciences</span>
                     <i class="fas fa-vial-circle-check b-icon"></i>
-                    <h3>ValidateOS</h3>
-                    <p>End-to-end CSV/CSA validation toolkit — VMP to PQ with full traceability.</p>
-                    <span class="b-cta">See validation suite <i class="fas fa-arrow-right"></i></span>
+                    <h3>ValidateOS — Pharma Validation Suite</h3>
+                    <p>End-to-end CSV/CSA validation — Validation Master Plans, GAMP 5 risk assessments and IQ/OQ/PQ execution with full requirements traceability. Zero FDA 483 findings.</p>
+                    <span class="b-cta">See the validation suite <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="products.php#capitcap" class="bento-card bento-4 bg-capit reveal reveal-d1">
+                    <span class="b-tag">Featured &middot; Fintech</span>
+                    <i class="fas fa-landmark b-icon"></i>
+                    <h3>CapitCap</h3>
+                    <p>Boutique equity crowdfunding platform connecting vetted investors with issuers raising capital.</p>
+                    <span class="b-cta">Explore the project <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="products.php#mediscan" class="bento-card bento-4 bg-health reveal">
                     <span class="b-tag">Healthcare</span>
@@ -206,36 +239,6 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
                 <div class="stat-b reveal reveal-d1"><div class="n"><span data-count="200">0</span>+</div><div class="l">Clients Worldwide</div></div>
                 <div class="stat-b reveal reveal-d2"><div class="n"><span data-count="15">0</span>+</div><div class="l">Years of Excellence</div></div>
                 <div class="stat-b reveal reveal-d3"><div class="n">Zero</div><div class="l">FDA 483 Findings</div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============ VALIDATION SPLIT ============ -->
-    <section class="section" id="validation">
-        <div class="container">
-            <div class="split">
-                <div class="reveal">
-                    <div class="kicker">Pharma Validation</div>
-                    <h2 class="section-title">Audit readiness. Regulatory confidence.</h2>
-                    <p class="section-sub">Ensure data integrity, accelerate validation cycles and stay inspection-ready with our end-to-end compliance practice — the same rigour behind dromominds.in.</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check"></i> GxP-focused compliance delivery with a risk-based GAMP 5 approach</li>
-                        <li><i class="fas fa-check"></i> FDA + EU regulatory alignment — 21 CFR Part 11 and Annex 11</li>
-                        <li><i class="fas fa-check"></i> Full lifecycle: URS, FS, DS, RTM through IQ / OQ / PQ</li>
-                        <li><i class="fas fa-check"></i> Validation timelines reduced by up to 40% via template-driven methods</li>
-                    </ul>
-                    <a href="validation.php" class="btn btn-ink">Explore Validation Practice <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="reveal reveal-d1">
-                    <div class="badge-wall" style="background: var(--ink); border-radius: var(--radius-lg); padding: 28px;">
-                        <div class="badge-tile"><h4><i class="fas fa-shield-halved"></i> FDA 21 CFR Part 11</h4><p>Electronic records, signatures and audit trails.</p></div>
-                        <div class="badge-tile"><h4><i class="fas fa-file-shield"></i> EU Annex 11</h4><p>Computerised systems governance and lifecycle docs.</p></div>
-                        <div class="badge-tile"><h4><i class="fas fa-diagram-project"></i> GAMP 5</h4><p>Risk-based approach to compliant GxP systems.</p></div>
-                        <div class="badge-tile"><h4><i class="fas fa-database"></i> ALCOA+</h4><p>Data integrity principles, end to end.</p></div>
-                        <div class="badge-tile"><h4><i class="fas fa-certificate"></i> ISO 9001 / 13485</h4><p>Quality management systems certification support.</p></div>
-                        <div class="badge-tile"><h4><i class="fas fa-flask"></i> GCP &amp; GLP</h4><p>Good clinical and laboratory practice adherence.</p></div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

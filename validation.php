@@ -326,7 +326,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
                     <a href="contact.php" class="btn btn-crimson">Start Free CSV Assessment <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="reveal reveal-d1">
-                    <div style="background: var(--ink); border-radius: var(--radius-lg); padding: 28px;">
+                    <div class="glow-panel">
                         <div class="score-card">
                             <h4>Advanced CSV Readiness™</h4>
                             <span class="sc-live">Live Preview</span>
