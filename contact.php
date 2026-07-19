@@ -28,15 +28,15 @@ $page_desc = 'Get in touch with DromoMinds Solutions — Bangalore and Kolkata o
                     <p>Free consultation, honest scoping, no hard sell.</p>
                     <div class="contact-line">
                         <div class="ic"><i class="fas fa-location-dot"></i></div>
-                        <div><h4>Bangalore Office</h4><p>21 Adugodi, Koramangala,<br>Bangalore 560030, India</p></div>
+                        <div><h4>Bangalore Office</h4><p>Dromominds Solution<br>#415 KHB Colony, Koramangala 5th Block<br>Bangalore 560095, Karnataka</p></div>
                     </div>
                     <div class="contact-line">
                         <div class="ic"><i class="fas fa-location-dot"></i></div>
-                        <div><h4>Kolkata Office</h4><p>Salt Lake Sector V,<br>Kolkata 700091, India</p></div>
+                        <div><h4>Kolkata Office</h4><p>12 Alimuddin Street<br>Park Street, Kolkata 700016<br>West Bengal</p></div>
                     </div>
                     <div class="contact-line">
                         <div class="ic"><i class="fas fa-phone"></i></div>
-                        <div><h4>Phone</h4><p>+91 76766 07661</p></div>
+                        <div><h4>Mobile</h4><p>+91 76766 09661</p></div>
                     </div>
                     <div class="contact-line">
                         <div class="ic"><i class="fas fa-envelope"></i></div>

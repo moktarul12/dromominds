@@ -42,8 +42,8 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
                 </div>
                 <div class="hero-visual">
                     <div class="hv-card">
-                        <div class="ic c"><i class="fas fa-store"></i></div>
-                        <div><h4>StallSpot Booking</h4><p>Stall B-14 reserved — Hall 2, Trade Expo</p></div>
+                        <div class="ic c"><i class="fas fa-landmark"></i></div>
+                        <div><h4>CapitCap Platform</h4><p>Equity crowdfunding for investors and issuers</p></div>
                         <i class="fas fa-circle-check tick"></i>
                     </div>
                     <div class="hv-card hv-offset-1">
@@ -138,12 +138,12 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
                 <p class="section-sub">Not just services — real products running in the wild, from exhibition halls to hospital wards.</p>
             </div>
             <div class="bento">
-                <a href="stall-booking.php" class="bento-card bento-8 bg-stall reveal">
-                    <span class="b-tag">Flagship &middot; Events Tech</span>
-                    <i class="fas fa-store b-icon"></i>
-                    <h3>StallSpot — Stall Booking Platform</h3>
-                    <p>Interactive floor plans, real-time availability, instant payment and exhibitor management for expos, trade fairs and melas. Book a stall like booking a cinema seat.</p>
-                    <span class="b-cta">Try the live floor plan <i class="fas fa-arrow-right"></i></span>
+                <a href="products.php#capitcap" class="bento-card bento-8 bg-capit reveal">
+                    <span class="b-tag">Featured Project &middot; Fintech</span>
+                    <i class="fas fa-landmark b-icon"></i>
+                    <h3>CapitCap — Boutique Equity Crowdfunding</h3>
+                    <p>A full digital platform connecting vetted investors with businesses and entrepreneurs, supporting campaign discovery, investor onboarding and complex Reg CF fundraising workflows.</p>
+                    <span class="b-cta">Explore the CapitCap project <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="validation.php" class="bento-card bento-4 bg-valid reveal reveal-d1">
                     <span class="b-tag">Life Sciences</span>
@@ -186,6 +186,13 @@ $page_desc = 'DromoMinds Solutions builds AI products, custom software and GxP p
                     <h3>LearnLoop</h3>
                     <p>Adaptive learning platform serving 100K+ students with personalised paths and automated assessment.</p>
                     <span class="b-cta">View product <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="stall-booking.php" class="bento-card bento-12 bg-stall reveal">
+                    <span class="b-tag">Events Technology</span>
+                    <i class="fas fa-store b-icon"></i>
+                    <h3>StallSpot — Stall Booking Platform</h3>
+                    <p>Interactive floor plans, live availability and exhibitor management for expos, trade fairs and melas.</p>
+                    <span class="b-cta">Try the live floor plan <i class="fas fa-arrow-right"></i></span>
                 </a>
             </div>
         </div>

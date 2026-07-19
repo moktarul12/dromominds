@@ -16,7 +16,6 @@
                 <ul>
                     <li><a href="services.php">Services</a></li>
                     <li><a href="products.php">Products</a></li>
-                    <li><a href="stall-booking.php">StallSpot — Stall Booking</a></li>
                     <li><a href="validation.php">Pharma Validation</a></li>
                     <li><a href="about.php">About Us</a></li>
                     <li><a href="contact.php">Contact</a></li>
@@ -36,9 +35,9 @@
             <div>
                 <h4>Reach Us</h4>
                 <ul>
-                    <li><i class="fas fa-location-dot"></i> 21 Adugodi, Koramangala, Bangalore 560030</li>
-                    <li><i class="fas fa-location-dot"></i> Salt Lake Sector V, Kolkata 700091</li>
-                    <li><i class="fas fa-phone"></i> +91 76766 07661</li>
+                    <li><i class="fas fa-location-dot"></i> #415 KHB Colony, Koramangala 5th Block, Bangalore 560095, Karnataka</li>
+                    <li><i class="fas fa-location-dot"></i> 12 Alimuddin Street, Park Street, Kolkata 700016, West Bengal</li>
+                    <li><i class="fas fa-phone"></i> +91 76766 09661</li>
                     <li><i class="fas fa-envelope"></i> contact@dromominds.com</li>
                 </ul>
             </div>

@@ -15,7 +15,6 @@ function nav_active($p) {
                 <a href="index.php" class="<?php echo nav_active('index'); ?>">Home</a>
                 <a href="services.php" class="<?php echo nav_active('services'); ?>">Services</a>
                 <a href="products.php" class="<?php echo nav_active('products'); ?>">Products</a>
-                <a href="stall-booking.php" class="<?php echo nav_active('stall-booking'); ?>">Stall Booking</a>
                 <a href="validation.php" class="<?php echo nav_active('validation'); ?>">Pharma Validation</a>
                 <a href="about.php" class="<?php echo nav_active('about'); ?>">About</a>
             </nav>
@@ -30,7 +29,6 @@ function nav_active($p) {
     <a href="index.php">Home</a>
     <a href="services.php">Services</a>
     <a href="products.php">Products</a>
-    <a href="stall-booking.php">Stall Booking</a>
     <a href="validation.php">Pharma Validation</a>
     <a href="about.php">About</a>
     <a href="contact.php">Contact</a>

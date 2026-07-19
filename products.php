@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Products | DromoMinds Solutions';
-$page_desc = 'The DromoMinds product suite — StallSpot stall booking, ValidateOS pharma validation, MediScan AI, TradePilot, Converse AI, FactorySense and LearnLoop.';
+$page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding, ValidateOS pharma validation, MediScan AI, TradePilot, Converse AI, FactorySense, LearnLoop and StallSpot booking.';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,34 +16,29 @@ $page_desc = 'The DromoMinds product suite — StallSpot stall booking, Validate
         <div class="container">
             <div class="breadcrumb"><a href="index.php">Home</a> / Products</div>
             <h1>Products built to run,<br>not just to demo.</h1>
-            <p>Seven products across events tech, life sciences, healthcare, fintech, manufacturing and education — each one live with real users and real numbers.</p>
+            <p>Our portfolio spans fintech, life sciences, healthcare, manufacturing, education and events technology — including the CapitCap equity-crowdfunding platform.</p>
         </div>
     </section>
 
-    <!-- StallSpot -->
-    <section class="section" id="stallspot">
+    <section class="section" id="capitcap">
         <div class="container">
+            <!-- CapitCap -->
             <div class="prod-row" style="padding-top: 0;">
-                <div class="prod-visual bg-stall reveal">
-                    <i class="fas fa-store"></i>
-                    <span class="pv-badge">Flagship Product</span>
+                <div class="prod-visual bg-capit reveal">
+                    <i class="fas fa-landmark"></i>
+                    <span class="pv-badge">Featured Project</span>
                 </div>
                 <div class="prod-body reveal reveal-d1">
-                    <span class="p-tag">Events &amp; Exhibitions</span>
-                    <h2>StallSpot — Stall Booking Platform</h2>
-                    <p>The way exhibitors book stalls at expos, trade fairs and melas is stuck in phone calls and spreadsheets. StallSpot replaces that with an interactive floor plan where organisers publish halls, set tiered pricing, and exhibitors pick, pay and get confirmed in minutes — like booking a cinema seat.</p>
+                    <span class="p-tag">Fintech &amp; Equity Crowdfunding</span>
+                    <h2>CapitCap — Boutique Equity Crowdfunding</h2>
+                    <p>DromoMinds delivered the CapitCap digital platform to connect vetted investors with businesses and entrepreneurs raising capital. The experience makes complex fundraising workflows easier for issuers while giving investors access to offerings beyond established exchanges.</p>
                     <ul class="check-list">
-                        <li><i class="fas fa-check"></i> Interactive drag-to-explore floor plans with live availability</li>
-                        <li><i class="fas fa-check"></i> Premium / standard / economy tier pricing per zone</li>
-                        <li><i class="fas fa-check"></i> Integrated payments, GST invoicing and exhibitor KYC</li>
-                        <li><i class="fas fa-check"></i> Organiser dashboard — occupancy heatmaps, revenue and check-ins</li>
+                        <li><i class="fas fa-check"></i> Investor and issuer onboarding with participant verification</li>
+                        <li><i class="fas fa-check"></i> Campaign and custom offering pages for Reg CF fundraising</li>
+                        <li><i class="fas fa-check"></i> Investment checkout for equity, debt and convertible instruments</li>
+                        <li><i class="fas fa-check"></i> Workflows supporting escrow, cap-table and SEC documentation needs</li>
                     </ul>
-                    <a href="stall-booking.php" class="btn btn-crimson">Try the Live Demo <i class="fas fa-arrow-right"></i></a>
-                    <div class="prod-stats">
-                        <div><strong>10K+</strong><span>Stalls Booked</span></div>
-                        <div><strong>120+</strong><span>Events Powered</span></div>
-                        <div><strong>3 min</strong><span>Avg. Booking Time</span></div>
-                    </div>
+                    <a href="https://capitcap.com/" target="_blank" rel="noopener" class="btn btn-crimson">Visit CapitCap <i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
 
@@ -184,6 +179,26 @@ $page_desc = 'The DromoMinds product suite — StallSpot stall booking, Validate
                         <div><strong>60%</strong><span>Better Engagement</span></div>
                         <div><strong>40%</strong><span>Faster Learning</span></div>
                     </div>
+                </div>
+            </div>
+
+            <!-- StallSpot is intentionally listed last -->
+            <div class="prod-row flip" id="stallspot">
+                <div class="prod-visual bg-stall reveal">
+                    <i class="fas fa-store"></i>
+                    <span class="pv-badge">Events Technology</span>
+                </div>
+                <div class="prod-body reveal reveal-d1">
+                    <span class="p-tag">Events &amp; Exhibitions</span>
+                    <h2>StallSpot — Stall Booking Platform</h2>
+                    <p>StallSpot replaces exhibition-booking phone calls and spreadsheets with an interactive floor plan where organisers publish halls, set tiered pricing, and exhibitors select and reserve a stall in minutes.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Interactive floor plans with live availability</li>
+                        <li><i class="fas fa-check"></i> Premium, standard and economy pricing by zone</li>
+                        <li><i class="fas fa-check"></i> Payment, GST invoicing and exhibitor KYC workflows</li>
+                        <li><i class="fas fa-check"></i> Organiser dashboard for occupancy, revenue and check-ins</li>
+                    </ul>
+                    <a href="stall-booking.php" class="btn btn-crimson">Try the Live Demo <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

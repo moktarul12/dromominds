@@ -38,12 +38,39 @@ $page_desc = 'DromoMinds Solutions — an AI, IT and pharma validation company w
                 </div>
                 <div class="reveal reveal-d1">
                     <div class="badge-wall" style="background: var(--ink); border-radius: var(--radius-lg); padding: 28px;">
-                        <div class="badge-tile"><h4><i class="fas fa-location-dot"></i> Bangalore HQ</h4><p>21 Adugodi, Koramangala — product engineering and AI research.</p></div>
-                        <div class="badge-tile"><h4><i class="fas fa-location-dot"></i> Kolkata Office</h4><p>Salt Lake Sector V — delivery, QA and validation practice.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-location-dot"></i> Bangalore HQ</h4><p>#415 KHB Colony, Koramangala 5th Block, Bangalore 560095, Karnataka.</p></div>
+                        <div class="badge-tile"><h4><i class="fas fa-location-dot"></i> Kolkata Office</h4><p>12 Alimuddin Street, Park Street, Kolkata 700016, West Bengal.</p></div>
                         <div class="badge-tile"><h4><i class="fas fa-people-group"></i> 50+ Engineers</h4><p>AI specialists, full-stack developers and CSV consultants.</p></div>
                         <div class="badge-tile"><h4><i class="fas fa-earth-asia"></i> Global Delivery</h4><p>Clients across the Americas, Europe, Middle East and APAC.</p></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="kicker">Leadership Team</div>
+                <h2 class="section-title">Experience across software and regulated pharma.</h2>
+                <p class="section-sub">DromoMinds is led by practitioners who have spent their careers delivering inside complex multinational environments.</p>
+            </div>
+            <div class="team-grid">
+                <article class="team-card reveal">
+                    <div class="team-avatar">MA</div>
+                    <div class="team-meta">Software Development</div>
+                    <h3>M. Anam</h3>
+                    <p>20+ years of total experience in multinational companies, with deep expertise in software development, technology delivery and building dependable digital platforms.</p>
+                    <div class="team-exp"><strong>20+</strong><span>Years in MNC environments</span></div>
+                </article>
+                <article class="team-card reveal reveal-d1">
+                    <div class="team-avatar">SA</div>
+                    <div class="team-meta">Pharma &amp; Compliance</div>
+                    <h3>S. M. Anam</h3>
+                    <p>15+ years of pharmaceutical industry experience spanning regulated operations, validation, quality systems and practical audit-readiness programmes.</p>
+                    <div class="team-exp"><strong>15+</strong><span>Years in pharma</span></div>
+                </article>
             </div>
         </div>
     </section>
