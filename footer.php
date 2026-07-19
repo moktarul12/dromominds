@@ -14,6 +14,8 @@
                 <h4>Explore</h4>
                 <ul>
                     <li><a href="/services">Services</a></li>
+                    <li><a href="/services#ai">AI &amp; Machine Learning</a></li>
+                    <li><a href="/services#software">Software Development</a></li>
                     <li><a href="/products">Products</a></li>
                     <li><a href="/validation">Pharma Validation</a></li>
                     <li><a href="/about">About Us</a></li>

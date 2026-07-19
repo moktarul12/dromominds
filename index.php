@@ -112,6 +112,54 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
             </div>
         </section>
 
+        <!-- ============ SOFTWARE + AI ============ -->
+        <section class="gx-section gx-light" id="solutions">
+            <div class="container">
+                <div class="gx-head-split">
+                    <div>
+                        <span class="gx-kicker">Software Development &amp; AI</span>
+                        <h2>Build intelligent products.<br><span class="grad-blue">Ship production software.</span></h2>
+                    </div>
+                    <p class="gx-head-note">Beyond compliance — DromoMinds engineers AI models, modern web platforms and mobile apps that move from prototype to production on schedule.</p>
+                </div>
+                <div class="gx-sol-grid">
+                    <a href="/services#ai" class="gx-sol-card tone-purple reveal">
+                        <div class="gx-sol-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI &amp; Machine Learning</h3>
+                        <p>Custom models, NLP, computer vision and predictive analytics — 75+ AI projects with 95% average accuracy.</p>
+                        <ul>
+                            <li>LLM apps &amp; chatbots</li>
+                            <li>Computer vision</li>
+                            <li>Forecasting &amp; BI</li>
+                        </ul>
+                        <span class="gx-ind-link">Explore AI services <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="/services#software" class="gx-sol-card tone-blue reveal reveal-d1">
+                        <div class="gx-sol-icon"><i class="fas fa-code"></i></div>
+                        <h3>Software Development</h3>
+                        <p>Web platforms, APIs and cloud systems built with modern stacks — from SaaS products to legacy modernisation.</p>
+                        <ul>
+                            <li>Web &amp; SaaS platforms</li>
+                            <li>REST / GraphQL APIs</li>
+                            <li>Cloud migration</li>
+                        </ul>
+                        <span class="gx-ind-link">Explore engineering <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="/services#mobile" class="gx-sol-card tone-teal reveal reveal-d2">
+                        <div class="gx-sol-icon"><i class="fas fa-mobile-screen"></i></div>
+                        <h3>Mobile &amp; Product Design</h3>
+                        <p>Native and cross-platform apps, plus UI/UX systems that keep users on the home screen.</p>
+                        <ul>
+                            <li>iOS &amp; Android</li>
+                            <li>Flutter / React Native</li>
+                            <li>UI/UX &amp; branding</li>
+                        </ul>
+                        <span class="gx-ind-link">Explore mobile &amp; design <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- ============ ECOSYSTEM ============ -->
         <section class="gx-section gx-ecosystem" id="platform">
             <div class="container">

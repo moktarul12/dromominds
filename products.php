@@ -16,7 +16,7 @@ $page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding,
         <div class="container">
             <div class="breadcrumb"><a href="/">Home</a> / Products</div>
             <h1>Products built to run,<br>not just to demo.</h1>
-            <p>Our portfolio spans fintech, life sciences, healthcare, manufacturing, education and events technology — including the CapitCap equity-crowdfunding platform.</p>
+            <p>Our portfolio spans AI, software platforms, fintech, life sciences, healthcare, manufacturing, education and events — including CapitCap and production AI systems.</p>
         </div>
     </section>
 
@@ -211,6 +211,7 @@ $page_desc = 'The DromoMinds product portfolio — CapitCap equity crowdfunding,
                 <h2>Want one of these — or something entirely new?</h2>
                 <p>Every product above started as a conversation. Yours can too.</p>
                 <a href="/contact" class="btn btn-crimson">Talk to Our Team <i class="fas fa-arrow-right"></i></a>
+                <a href="/services#ai" class="btn btn-ghost-light" style="margin-left: 12px;">AI &amp; Software Services <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

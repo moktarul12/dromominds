@@ -81,6 +81,29 @@ $products_menu = [
     ['StallSpot &mdash; Stall Booking', '/stall-booking'],
 ];
 
+$solutions_menu = [
+    'AI &amp; Machine Learning' => [
+        ['Custom AI Development', '/services#ai'],
+        ['Natural Language Processing', '/services#ai'],
+        ['Computer Vision', '/services#ai'],
+        ['Predictive Analytics', '/services#ai'],
+        ['AI-Powered Enterprise Apps', '/services#ai'],
+    ],
+    'Software Development' => [
+        ['Web Platforms &amp; SaaS', '/services#software'],
+        ['API Development', '/services#software'],
+        ['Legacy Modernisation', '/services#software'],
+        ['Cloud &amp; Integrations', '/services#software'],
+        ['Custom Software', '/services#software'],
+    ],
+    'Digital Products' => [
+        ['Mobile Apps (iOS / Android)', '/services#mobile'],
+        ['UI/UX Design', '/services#design'],
+        ['Digital Marketing', '/services#marketing'],
+        ['Pharma CSV Validation', '/validation'],
+    ],
+];
+
 $resources_menu = [
     ['Blogs', 'https://dromominds.in/blog', true],
     ['Case Studies', '/validation#case-studies', false],
@@ -104,6 +127,23 @@ $resources_menu = [
                         <div class="dd-panel">
                             <div class="mega-grid">
                                 <?php foreach ($expertise_menu as $group => $items): ?>
+                                <div class="dd-group">
+                                    <h5><?php echo $group; ?></h5>
+                                    <?php foreach ($items as $it): ?>
+                                    <a href="<?php echo $it[1]; ?>"><?php echo $it[0]; ?></a>
+                                    <?php endforeach; ?>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="/services" class="<?php echo nav_active('services'); ?>">Solutions <i class="fas fa-chevron-down caret"></i></a>
+                    <div class="nav-dd">
+                        <div class="dd-panel dd-panel-wide">
+                            <div class="dd-grid-3">
+                                <?php foreach ($solutions_menu as $group => $items): ?>
                                 <div class="dd-group">
                                     <h5><?php echo $group; ?></h5>
                                     <?php foreach ($items as $it): ?>
@@ -163,6 +203,12 @@ $resources_menu = [
 </header>
 <div class="mobile-menu" id="mobileMenu">
     <a href="/">Home</a>
+    <h5>Solutions</h5>
+    <?php foreach ($solutions_menu as $group => $items): ?>
+    <span class="mm-group"><?php echo $group; ?></span>
+    <?php foreach ($items as $it): ?>
+    <a href="<?php echo $it[1]; ?>" class="sub"><?php echo $it[0]; ?></a>
+    <?php endforeach; endforeach; ?>
     <h5>Expertise</h5>
     <?php foreach ($expertise_menu as $group => $items): ?>
     <span class="mm-group"><?php echo $group; ?></span>
