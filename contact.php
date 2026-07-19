@@ -40,7 +40,12 @@ $page_desc = 'Get in touch with DromoMinds Solutions — Bangalore and Kolkata o
                     </div>
                     <div class="contact-line">
                         <div class="ic"><i class="fas fa-envelope"></i></div>
-                        <div><h4>Email</h4><p>contact@dromominds.com</p></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:admin@dromominds.com" style="color:inherit;text-decoration:none;">admin@dromominds.com</a></p>
+                            <p><a href="mailto:anam@dromominds.com" style="color:inherit;text-decoration:none;">anam@dromominds.com</a></p>
+                            <p><a href="mailto:dm@dromominds.com" style="color:inherit;text-decoration:none;">dm@dromominds.com</a></p>
+                        </div>
                     </div>
                 </div>
                 <div class="contact-form-pane">

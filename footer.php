@@ -38,7 +38,9 @@
                     <li><i class="fas fa-location-dot"></i> #415 KHB Colony, Koramangala 5th Block, Bangalore 560095, Karnataka</li>
                     <li><i class="fas fa-location-dot"></i> 12 Alimuddin Street, Park Street, Kolkata 700016, West Bengal</li>
                     <li><i class="fas fa-phone"></i> +91 76766 09661</li>
-                    <li><i class="fas fa-envelope"></i> contact@dromominds.com</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:admin@dromominds.com">admin@dromominds.com</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:anam@dromominds.com">anam@dromominds.com</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:dm@dromominds.com">dm@dromominds.com</a></li>
                 </ul>
             </div>
         </div>
