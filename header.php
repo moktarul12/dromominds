@@ -9,7 +9,7 @@ function nav_active($p) {
     <div class="container">
         <div class="header-inner">
             <a href="index.php" class="logo">
-                <img src="dm/logo.png" alt="DromoMinds Solutions">
+                <img src="dm/logo1.png" alt="DromoMinds Solutions">
             </a>
             <?php if ($page === 'index'): ?>
             <nav class="nav home-nav">

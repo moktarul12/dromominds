@@ -74,12 +74,6 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
 
                 <a href="#industries" class="gx-scroll-down">Scroll Down<i class="fas fa-chevron-down"></i></a>
             </div>
-            <div class="gx-wave" aria-hidden="true">
-                <svg viewBox="0 0 1440 130" preserveAspectRatio="none">
-                    <path class="wave-body" d="M0,60 C380,135 920,-15 1440,72 L1440,130 L0,130 Z"/>
-                    <path class="wave-glow" d="M0,60 C380,135 920,-15 1440,72" fill="none"/>
-                </svg>
-            </div>
         </section>
 
         <!-- ============ INDUSTRIES ============ -->

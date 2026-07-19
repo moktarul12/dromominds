@@ -1594,7 +1594,7 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 150px 0 120px;
+    padding: 150px 0 150px;
     overflow: hidden;
     background:
         radial-gradient(1000px 620px at 78% 30%, rgba(38, 70, 190, 0.35), transparent 62%),
@@ -1613,24 +1613,22 @@ textarea.form-input { min-height: 130px; resize: vertical; }
         radial-gradient(circle at 90% 55%, rgba(150, 120, 255, 0.7) 0 1px, transparent 2px),
         radial-gradient(circle at 55% 40%, rgba(255, 255, 255, 0.35) 0 1px, transparent 2px);
     background-size: 220px 200px, 260px 240px, 190px 210px, 300px 260px, 170px 180px;
-    animation: gx-stars 40s linear infinite;
     opacity: 0.8;
 }
-@keyframes gx-stars { to { background-position: 220px 200px, -260px 240px, 190px -210px, -300px -260px, 170px 180px; } }
 
 .gx-hero-molecules { position: absolute; inset: 0; pointer-events: none; }
 .gx-hero-molecules i {
     position: absolute;
-    color: rgba(90, 150, 255, 0.16);
-    filter: drop-shadow(0 0 18px rgba(70, 130, 255, 0.35));
-    animation: gx-float 7s ease-in-out infinite;
+    color: rgba(90, 150, 255, 0.14);
+    animation: gx-float 8s ease-in-out infinite;
+    will-change: transform;
 }
 .gx-hero-molecules .m-1 { font-size: 120px; right: 3%; top: 12%; animation-delay: -1s; }
 .gx-hero-molecules .m-2 { font-size: 74px; right: 30%; bottom: 14%; animation-delay: -3s; }
 .gx-hero-molecules .m-3 { font-size: 88px; left: 42%; top: 9%; animation-delay: -2s; animation-duration: 9s; }
 .gx-hero-molecules .m-4 { font-size: 56px; left: 3%; bottom: 30%; animation-delay: -4s; }
-.gx-hero-molecules .m-5 { font-size: 100px; right: 12%; bottom: 4%; animation-delay: -5s; color: rgba(140, 90, 255, 0.14); }
-@keyframes gx-float { 50% { transform: translateY(-16px) rotate(3deg); } }
+.gx-hero-molecules .m-5 { font-size: 100px; right: 12%; bottom: 4%; animation-delay: -5s; color: rgba(140, 90, 255, 0.12); }
+@keyframes gx-float { 50% { transform: translateY(-14px); } }
 
 .gx-hero-grid {
     position: relative;
@@ -1704,11 +1702,11 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(52, 96, 255, 0.35), rgba(90, 50, 220, 0.14) 45%, transparent 70%);
-    filter: blur(12px);
-    animation: gx-halo 5s ease-in-out infinite;
+    background: radial-gradient(circle, rgba(52, 96, 255, 0.32), rgba(90, 50, 220, 0.12) 45%, transparent 68%);
+    animation: gx-halo 6s ease-in-out infinite;
+    will-change: opacity;
 }
-@keyframes gx-halo { 50% { opacity: 0.72; transform: translate(-50%, -50%) scale(1.06); } }
+@keyframes gx-halo { 50% { opacity: 0.65; } }
 .gx-ring {
     position: absolute;
     left: 50%; top: 50%;
@@ -1717,7 +1715,7 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     border: 1px solid rgba(95, 150, 255, 0.3);
 }
 .gx-ring.ring-a { width: 220px; height: 220px; box-shadow: 0 0 26px rgba(70, 120, 255, 0.25), inset 0 0 26px rgba(70, 120, 255, 0.15); }
-.gx-ring.ring-b { width: 350px; height: 350px; border-style: dashed; animation: gx-spin 40s linear infinite; }
+.gx-ring.ring-b { width: 350px; height: 350px; border-style: dashed; animation: gx-spin 40s linear infinite; will-change: transform; }
 .gx-ring.ring-c { width: 480px; height: 480px; border-color: rgba(55, 210, 242, 0.16); }
 .gx-orbit-dots {
     position: absolute;
@@ -1725,8 +1723,8 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
-.gx-orbit-dots.od-1 { width: 285px; height: 285px; animation: gx-spin 22s linear infinite; }
-.gx-orbit-dots.od-2 { width: 420px; height: 420px; animation: gx-spin-rev 34s linear infinite; }
+.gx-orbit-dots.od-1 { width: 285px; height: 285px; animation: gx-spin 22s linear infinite; will-change: transform; }
+.gx-orbit-dots.od-2 { width: 420px; height: 420px; animation: gx-spin-rev 34s linear infinite; will-change: transform; }
 @keyframes gx-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
 @keyframes gx-spin-rev { to { transform: translate(-50%, -50%) rotate(-360deg); } }
 .gx-orbit-dots i {
@@ -1760,11 +1758,18 @@ textarea.form-input { min-height: 130px; resize: vertical; }
         0 0 28px rgba(60, 120, 255, 0.8),
         0 0 80px rgba(70, 90, 255, 0.4),
         inset 0 0 24px rgba(140, 190, 255, 0.25);
+}
+.gx-chip::after {
+    content: '';
+    position: absolute;
+    inset: -34px;
+    border-radius: 40px;
+    background: radial-gradient(circle, rgba(80, 130, 255, 0.4), transparent 70%);
     animation: gx-chip-pulse 3.4s ease-in-out infinite;
+    will-change: opacity;
+    pointer-events: none;
 }
-@keyframes gx-chip-pulse {
-    50% { box-shadow: 0 0 42px rgba(60, 120, 255, 1), 0 0 110px rgba(70, 90, 255, 0.55), inset 0 0 30px rgba(140, 190, 255, 0.35); }
-}
+@keyframes gx-chip-pulse { 50% { opacity: 0.35; } }
 .gx-chip strong {
     font-family: var(--font-display);
     font-size: 40px;
@@ -1809,8 +1814,9 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     text-transform: uppercase;
     color: #dbe6ff;
     line-height: 1.35;
-    animation: gx-float 5.5s ease-in-out infinite;
+    animation: gx-float 6s ease-in-out infinite;
     animation-delay: var(--d, 0s);
+    will-change: transform;
 }
 .gx-sat i {
     width: 54px; height: 54px;
@@ -1849,18 +1855,28 @@ textarea.form-input { min-height: 130px; resize: vertical; }
 .gx-scroll-down i { animation: gx-bounce 1.8s ease-in-out infinite; color: #5eb2ff; }
 @keyframes gx-bounce { 50% { transform: translateY(6px); } }
 
-.gx-wave { position: absolute; left: 0; right: 0; bottom: -2px; line-height: 0; pointer-events: none; }
-.gx-wave svg { width: 100%; height: 120px; display: block; }
-.gx-wave .wave-body { fill: #f5f8ff; }
-.gx-wave .wave-glow {
-    stroke: #7a5cff;
-    stroke-width: 3;
-    filter: drop-shadow(0 0 8px rgba(130, 90, 255, 0.9)) drop-shadow(0 0 22px rgba(80, 120, 255, 0.6));
-}
-
 /* --- light sections --- */
 .gx-section { position: relative; padding: 90px 0; }
 .gx-light { background: #f5f8ff; color: var(--gx-ink); }
+/* light panel overlaps the dark hero with soft rounded shoulders */
+.gx-hero + .gx-light {
+    border-radius: 36px 36px 0 0;
+    margin-top: -44px;
+    z-index: 3;
+    box-shadow: 0 -18px 60px rgba(20, 50, 160, 0.35);
+}
+.gx-hero + .gx-light::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #2f6bff, #7a3bff);
+    opacity: 0.55;
+}
 .gx-light + .gx-light { padding-top: 40px; }
 .gx-head-split {
     display: grid;
@@ -2060,7 +2076,6 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     inset: -18px;
     border-radius: 50%;
     border: 1px dashed rgba(100, 155, 255, 0.45);
-    animation: gx-spin 26s linear infinite;
 }
 .gx-eco-core-ring::before, .gx-eco-core-ring::after {
     content: '';
@@ -2069,9 +2084,11 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     border-radius: 50%;
     background: #37d2f2;
     box-shadow: 0 0 14px 4px rgba(55, 210, 242, 0.7);
+    animation: gx-dot-blink 3s ease-in-out infinite;
 }
 .gx-eco-core-ring::before { top: 6%; left: 14%; }
-.gx-eco-core-ring::after { bottom: 6%; right: 14%; background: #9a6bff; box-shadow: 0 0 14px 4px rgba(154, 107, 255, 0.7); }
+.gx-eco-core-ring::after { bottom: 6%; right: 14%; background: #9a6bff; box-shadow: 0 0 14px 4px rgba(154, 107, 255, 0.7); animation-delay: 1.5s; }
+@keyframes gx-dot-blink { 50% { opacity: 0.3; } }
 
 .gx-eco-feats { display: flex; flex-direction: column; gap: 26px; }
 .gx-feat { display: flex; align-items: center; gap: 14px; font-size: 12.5px; font-weight: 600; line-height: 1.4; color: #dbe6ff; }
@@ -2322,5 +2339,5 @@ textarea.form-input { min-height: 130px; resize: vertical; }
     .gx-suite { grid-template-columns: 1fr; }
     .gx-footer-grid { grid-template-columns: 1fr; gap: 30px; }
     .gx-footer-bottom { flex-direction: column; text-align: center; }
-    .gx-wave svg { height: 60px; }
+    .gx-hero + .gx-light { border-radius: 24px 24px 0 0; margin-top: -28px; }
 }
