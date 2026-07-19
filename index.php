@@ -251,6 +251,90 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
             </div>
         </section>
 
+        <!-- ============ TRUSTED BY ============ -->
+        <section class="gx-section gx-trustzone" id="clients">
+            <div class="container">
+                <div class="gx-trust-grid">
+                    <div class="gx-trust-copy">
+                        <span class="gx-kicker">Global Reach</span>
+                        <h2>Trusted by Leaders<br><span class="grad-blue">Across Continents.</span></h2>
+                        <p>We partner with the world's most innovative life sciences organisations to deliver unparalleled compliance and validation infrastructure — from top-tier pharma and biotech to medical device manufacturers.</p>
+                        <div class="gx-regions">
+                            <div class="gx-region active"><i class="fas fa-globe"></i><div><strong>Global Alliance</strong><span>53+ countries served</span></div></div>
+                            <div class="gx-region"><i class="fas fa-earth-americas"></i><div><strong>North &amp; South America</strong><span>Clinical, biotech &amp; devices</span></div></div>
+                            <div class="gx-region"><i class="fas fa-earth-europe"></i><div><strong>Europe &amp; Middle East</strong><span>EU GMP &amp; Annex 11 aligned</span></div></div>
+                            <div class="gx-region"><i class="fas fa-earth-asia"></i><div><strong>Asia Pacific</strong><span>Manufacturing &amp; CRO hubs</span></div></div>
+                        </div>
+                        <div class="gx-trust-stats">
+                            <div><strong>200+</strong><span>Global Clients</span></div>
+                            <div><strong>98%</strong><span>Client Retention</span></div>
+                            <div><strong>Zero</strong><span>Critical Findings</span></div>
+                        </div>
+                    </div>
+
+                    <?php
+                    $client_cols = [
+                        [
+                            ['Apex Clinical', 'North America', 'c1'],
+                            ['GeneSys Solutions', 'North America', 'c2'],
+                            ['NovaLife Health', 'South America', 'c3'],
+                            ['Vanguard Dx', 'North America', 'c4'],
+                            ['Helix Systems', 'North America', 'c5'],
+                            ['Beacon Care', 'North America', 'c1'],
+                            ['Synapse Inc', 'North America', 'c2'],
+                            ['Fortress Rx', 'South America', 'c3'],
+                            ['Aegis Bio', 'North America', 'c4'],
+                            ['Optima Labs', 'South America', 'c5'],
+                        ],
+                        [
+                            ['EuroPharma Ltd', 'Europe', 'c3'],
+                            ['BioNordic', 'Europe', 'c4'],
+                            ['MediGene', 'Europe', 'c5'],
+                            ['Oasis Medical', 'Middle East', 'c1'],
+                            ['MENA Biotech', 'Middle East', 'c2'],
+                            ['Gulf Diagnostics', 'Middle East', 'c3'],
+                            ['AlpinMed', 'Europe', 'c4'],
+                            ['CryoTech EU', 'Europe', 'c5'],
+                            ['Desert Bio', 'Middle East', 'c1'],
+                            ['Nordic Health', 'Europe', 'c2'],
+                        ],
+                        [
+                            ['Sakura Bio', 'Asia Pacific', 'c5'],
+                            ['TechPharma', 'Asia Pacific', 'c1'],
+                            ['Pacific Health', 'Asia Pacific', 'c2'],
+                            ['Lotus Life', 'Asia Pacific', 'c3'],
+                            ['Oriental Rx', 'Asia Pacific', 'c4'],
+                            ['Aussie Bio', 'Asia Pacific', 'c5'],
+                            ['Lumen Labs', 'Asia Pacific', 'c1'],
+                            ['Cedar Pharm', 'Middle East', 'c2'],
+                            ['Dune Health', 'Middle East', 'c3'],
+                            ['Arctic Bio', 'Europe', 'c4'],
+                        ],
+                    ];
+                    function gx_initials($name) {
+                        $parts = preg_split('/\s+/', trim($name));
+                        $ini = strtoupper(substr($parts[0], 0, 1));
+                        if (count($parts) > 1) { $ini .= strtoupper(substr($parts[1], 0, 1)); }
+                        return $ini;
+                    }
+                    ?>
+                    <div class="gx-trust-wall" aria-label="Client organisations">
+                        <?php foreach ($client_cols as $ci => $col): ?>
+                        <div class="gx-t-col<?php echo $ci === 1 ? ' rev' : ''; ?>">
+                            <?php for ($loop = 0; $loop < 2; $loop++): foreach ($col as $c): ?>
+                            <div class="gx-t-card">
+                                <span class="gx-t-avatar <?php echo $c[2]; ?>"><?php echo gx_initials($c[0]); ?></span>
+                                <span class="gx-t-meta"><strong><?php echo $c[0]; ?></strong><small><?php echo $c[1]; ?></small></span>
+                                <i class="fas fa-circle-check"></i>
+                            </div>
+                            <?php endforeach; endfor; ?>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ============ FOOTER ============ -->
         <footer class="gx-footer">
             <div class="gx-footer-globe" aria-hidden="true"></div>
