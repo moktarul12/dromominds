@@ -20,12 +20,12 @@ $page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, G
         <div class="container">
             <div class="hero-inner">
                 <div>
-                    <div class="hero-eyebrow"><span class="dot"></span> GAMP 5 &middot; FDA 21 CFR Part 11 &middot; EU Annex 11</div>
-                    <h1><span class="mark">Pharma validation</span> that passes audits. <span class="stroke">Software</span> that ships.</h1>
-                    <p class="lead">DromoMinds Solutions is a GxP compliance and validation practice with a full engineering team behind it. CSV/CSA, equipment qualification and data integrity — plus the AI and software products to match.</p>
+                    <div class="hero-eyebrow"><span class="dot"></span> Audit-Ready. Always.</div>
+                    <h1>Intelligent systems. <span class="mark">Audit-ready</span> from <span class="stroke">day one</span>.</h1>
+                    <p class="lead">DromoMinds helps organisations build, validate and maintain compliance-ready systems — with automation, traceability and confidence. Pharma validation first, world-class AI and software behind it.</p>
                     <div class="hero-actions">
                         <a href="validation.php" class="btn btn-crimson">Explore Pharma Validation <i class="fas fa-arrow-right"></i></a>
-                        <a href="products.php" class="btn btn-ghost-light">See Our Products</a>
+                        <a href="contact.php" class="btn btn-ghost-light">Talk to an Expert</a>
                     </div>
                     <div class="hero-metrics">
                         <div class="hero-metric">
@@ -43,25 +43,49 @@ $page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, G
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hv-card">
-                        <div class="ic c"><i class="fas fa-clipboard-check"></i></div>
-                        <div><h4>CSV Validation</h4><p>IQ/OQ/PQ executed — zero 483 findings</p></div>
-                        <i class="fas fa-circle-check tick"></i>
-                    </div>
-                    <div class="hv-card hv-offset-1">
-                        <div class="ic t"><i class="fas fa-database"></i></div>
-                        <div><h4>Data Integrity</h4><p>ALCOA+ assessment complete — audit-ready</p></div>
-                        <i class="fas fa-circle-check tick"></i>
-                    </div>
-                    <div class="hv-card hv-offset-2">
-                        <div class="ic g"><i class="fas fa-landmark"></i></div>
-                        <div><h4>CapitCap Platform</h4><p>Equity crowdfunding for investors and issuers</p></div>
-                        <i class="fas fa-circle-check tick"></i>
-                    </div>
-                    <div class="hv-card hv-offset-1">
-                        <div class="ic v"><i class="fas fa-brain"></i></div>
-                        <div><h4>AI Model Deployed</h4><p>Diagnosis engine at 95% accuracy</p></div>
-                        <i class="fas fa-circle-check tick"></i>
+                    <?php
+                    $cube_faces = [
+                        'front'  => ['flask', 'dna', 'pills', 'vial', 'microscope', 'atom', 'syringe', 'capsules', 'vials'],
+                        'back'   => ['brain', 'microchip', 'code', 'robot', 'database', 'cloud', 'network-wired', 'server', 'shield-halved'],
+                        'right'  => ['clipboard-check', 'file-shield', 'certificate', 'scale-balanced', 'magnifying-glass-chart', 'lock', 'fingerprint', 'check-double', 'book'],
+                        'left'   => ['chart-line', 'gears', 'laptop-code', 'mobile-screen', 'diagram-project', 'terminal', 'bolt', 'cubes', 'wand-magic-sparkles'],
+                        'top'    => ['flask-vial', 'prescription-bottle-medical', 'notes-medical', 'stethoscope', 'heart-pulse', 'staff-snake', 'tablets', 'droplet', 'biohazard'],
+                        'bottom' => ['key', 'user-shield', 'eye', 'list-check', 'stamp', 'folder-open', 'signature', 'timeline', 'clipboard-list'],
+                    ];
+                    // one glowing tile of each accent colour per face, in rotating positions
+                    $glow_map = [
+                        'front'  => [0 => 'glow-c', 4 => 'glow-v', 8 => 'glow-t'],
+                        'back'   => [2 => 'glow-v', 4 => 'glow-c', 6 => 'glow-t'],
+                        'right'  => [1 => 'glow-t', 3 => 'glow-c', 7 => 'glow-v'],
+                        'left'   => [0 => 'glow-v', 5 => 'glow-t', 7 => 'glow-c'],
+                        'top'    => [2 => 'glow-c', 4 => 'glow-t', 6 => 'glow-v'],
+                        'bottom' => [1 => 'glow-c', 5 => 'glow-v', 8 => 'glow-t'],
+                    ];
+                    ?>
+                    <div class="cube-scene">
+                        <div class="cube-glow"></div>
+                        <div class="cube-wave"></div>
+                        <div class="cube">
+                            <?php foreach ($cube_faces as $face => $icons): ?>
+                            <div class="cube-face f-<?php echo $face; ?>">
+                                <?php foreach ($icons as $i => $icon): ?>
+                                <div class="cube-tile <?php echo $glow_map[$face][$i] ?? ''; ?>"><i class="fas fa-<?php echo $icon; ?>"></i></div>
+                                <?php endforeach; ?>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                        <div class="cube-badge cb-1">
+                            <div class="cb-ic"><i class="fas fa-shield-halved"></i></div>
+                            <div><h5>Smarter Validation</h5><p>Risk-based approach</p></div>
+                        </div>
+                        <div class="cube-badge cb-2">
+                            <div class="cb-ic"><i class="fas fa-chart-line"></i></div>
+                            <div><h5>Real-time Visibility</h5><p>Track every change</p></div>
+                        </div>
+                        <div class="cube-badge cb-3">
+                            <div class="cb-ic"><i class="fas fa-clipboard-check"></i></div>
+                            <div><h5>Inspection Ready</h5><p>Always audit-ready</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,7 +101,7 @@ $page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, G
     </div>
 
     <!-- ============ VALIDATION SPLIT ============ -->
-    <section class="section" id="validation">
+    <section class="section bg-molecule" id="validation">
         <div class="container">
             <div class="split">
                 <div class="reveal">
@@ -108,7 +132,7 @@ $page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, G
     </section>
 
     <!-- ============ SERVICES ============ -->
-    <section class="section section-white" id="services">
+    <section class="section section-white bg-circuit" id="services">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">What We Do</div>
@@ -163,7 +187,7 @@ $page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, G
     </section>
 
     <!-- ============ PRODUCTS BENTO ============ -->
-    <section class="section section-dark" id="products">
+    <section class="section section-dark bg-neural-dark" id="products">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">Product Suite</div>
@@ -280,7 +304,7 @@ $page_desc = 'DromoMinds Solutions delivers GxP pharma validation — CSV/CSA, G
     </section>
 
     <!-- ============ TESTIMONIALS ============ -->
-    <section class="section section-dark">
+    <section class="section section-dark bg-molecule-dark">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">Testimonials</div>

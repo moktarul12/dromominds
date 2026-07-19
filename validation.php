@@ -66,7 +66,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ CAPABILITIES ============ -->
-    <section class="section" id="capabilities">
+    <section class="section bg-molecule" id="capabilities">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">Capabilities</div>
@@ -157,7 +157,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ LIFECYCLE ============ -->
-    <section class="section section-dark">
+    <section class="section section-dark bg-molecule-dark">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">Methodology</div>
@@ -223,7 +223,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ SECTORS ============ -->
-    <section class="section section-white">
+    <section class="section section-white bg-molecule">
         <div class="container">
             <div class="section-head center reveal">
                 <div class="kicker">Sectors We Empower</div>
@@ -310,7 +310,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ ASSESSMENT TOOL ============ -->
-    <section class="section">
+    <section class="section bg-circuit">
         <div class="container">
             <div class="split">
                 <div class="reveal">
@@ -340,7 +340,7 @@ $page_desc = 'Computerized System Validation (CSV/CSA), FDA 21 CFR Part 11 compl
     </section>
 
     <!-- ============ CSA TRANSITION KIT ============ -->
-    <section class="section section-dark">
+    <section class="section section-dark bg-neural-dark">
         <div class="container">
             <div class="split">
                 <div class="reveal">

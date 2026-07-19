@@ -21,7 +21,7 @@ $page_desc = 'AI & machine learning, software engineering, mobile apps, UI/UX de
     </section>
 
     <!-- ============ AI ============ -->
-    <section class="section" id="ai">
+    <section class="section bg-circuit" id="ai">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">AI &amp; Machine Learning</div>
@@ -70,7 +70,7 @@ $page_desc = 'AI & machine learning, software engineering, mobile apps, UI/UX de
     </section>
 
     <!-- ============ SOFTWARE ============ -->
-    <section class="section section-white" id="software">
+    <section class="section section-white bg-circuit" id="software">
         <div class="container">
             <div class="section-head reveal">
                 <div class="kicker">Software Engineering</div>
@@ -160,7 +160,7 @@ $page_desc = 'AI & machine learning, software engineering, mobile apps, UI/UX de
     </section>
 
     <!-- ============ VALIDATION POINTER ============ -->
-    <section class="section section-dark" id="pharma">
+    <section class="section section-dark bg-molecule-dark" id="pharma">
         <div class="container">
             <div class="split">
                 <div class="reveal">
