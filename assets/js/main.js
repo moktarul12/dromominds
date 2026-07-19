@@ -58,6 +58,23 @@ const countObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
 
+// ---------- Client region tabs (Trusted by Leaders) ----------
+const clientGrid = document.getElementById('clientGrid');
+if (clientGrid) {
+    const tabs = document.querySelectorAll('.gx-ctab');
+    const cards = clientGrid.querySelectorAll('.gx-client');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const region = tab.dataset.region;
+            cards.forEach(card => {
+                card.classList.toggle('hide', region !== 'all' && card.dataset.region !== region);
+            });
+        });
+    });
+}
+
 // ---------- Contact / generic form ----------
 document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', e => {

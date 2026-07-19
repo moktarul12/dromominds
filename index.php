@@ -251,85 +251,91 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
             </div>
         </section>
 
-        <!-- ============ TRUSTED BY ============ -->
+        <!-- ============ TRUSTED BY (mirrors dromominds.in) ============ -->
         <section class="gx-section gx-trustzone" id="clients">
             <div class="container">
                 <div class="gx-trust-grid">
                     <div class="gx-trust-copy">
-                        <span class="gx-kicker">Global Reach</span>
-                        <h2>Trusted by Leaders<br><span class="grad-blue">Across Continents.</span></h2>
-                        <p>We partner with the world's most innovative life sciences organisations to deliver unparalleled compliance and validation infrastructure — from top-tier pharma and biotech to medical device manufacturers.</p>
-                        <div class="gx-regions">
-                            <div class="gx-region active"><i class="fas fa-globe"></i><div><strong>Global Alliance</strong><span>53+ countries served</span></div></div>
-                            <div class="gx-region"><i class="fas fa-earth-americas"></i><div><strong>North &amp; South America</strong><span>Clinical, biotech &amp; devices</span></div></div>
-                            <div class="gx-region"><i class="fas fa-earth-europe"></i><div><strong>Europe &amp; Middle East</strong><span>EU GMP &amp; Annex 11 aligned</span></div></div>
-                            <div class="gx-region"><i class="fas fa-earth-asia"></i><div><strong>Asia Pacific</strong><span>Manufacturing &amp; CRO hubs</span></div></div>
-                        </div>
-                        <div class="gx-trust-stats">
-                            <div><strong>200+</strong><span>Global Clients</span></div>
-                            <div><strong>98%</strong><span>Client Retention</span></div>
-                            <div><strong>Zero</strong><span>Critical Findings</span></div>
+                        <span class="gx-reach-pill"><i class="fas fa-globe"></i> Global Reach</span>
+                        <h2>Trusted by Leaders <br><span class="it">Across Continents</span></h2>
+                        <p>We partner with the world's most innovative life sciences organizations to deliver unparalleled compliance and validation infrastructure. Our footprint spans top-tier pharma, biotech, and medical device manufacturers.</p>
+                        <div class="gx-stat-grid">
+                            <div class="gx-stat-card">
+                                <strong><span data-count="40">0</span>+</strong>
+                                <span>Enterprise Clients</span>
+                            </div>
+                            <div class="gx-stat-card">
+                                <strong class="brand-text">Zero</strong>
+                                <span>FDA 483 Findings</span>
+                            </div>
+                            <div class="gx-stat-card">
+                                <strong><span data-count="15">0</span>+</strong>
+                                <span>Countries Served</span>
+                            </div>
+                            <div class="gx-stat-card brand-card">
+                                <strong><span data-count="100">0</span>%</strong>
+                                <span>Audit Success Rate</span>
+                            </div>
                         </div>
                     </div>
 
                     <?php
-                    $client_cols = [
-                        [
-                            ['Apex Clinical', 'North America', 'c1'],
-                            ['GeneSys Solutions', 'North America', 'c2'],
-                            ['NovaLife Health', 'South America', 'c3'],
-                            ['Vanguard Dx', 'North America', 'c4'],
-                            ['Helix Systems', 'North America', 'c5'],
-                            ['Beacon Care', 'North America', 'c1'],
-                            ['Synapse Inc', 'North America', 'c2'],
-                            ['Fortress Rx', 'South America', 'c3'],
-                            ['Aegis Bio', 'North America', 'c4'],
-                            ['Optima Labs', 'South America', 'c5'],
-                        ],
-                        [
-                            ['EuroPharma Ltd', 'Europe', 'c3'],
-                            ['BioNordic', 'Europe', 'c4'],
-                            ['MediGene', 'Europe', 'c5'],
-                            ['Oasis Medical', 'Middle East', 'c1'],
-                            ['MENA Biotech', 'Middle East', 'c2'],
-                            ['Gulf Diagnostics', 'Middle East', 'c3'],
-                            ['AlpinMed', 'Europe', 'c4'],
-                            ['CryoTech EU', 'Europe', 'c5'],
-                            ['Desert Bio', 'Middle East', 'c1'],
-                            ['Nordic Health', 'Europe', 'c2'],
-                        ],
-                        [
-                            ['Sakura Bio', 'Asia Pacific', 'c5'],
-                            ['TechPharma', 'Asia Pacific', 'c1'],
-                            ['Pacific Health', 'Asia Pacific', 'c2'],
-                            ['Lotus Life', 'Asia Pacific', 'c3'],
-                            ['Oriental Rx', 'Asia Pacific', 'c4'],
-                            ['Aussie Bio', 'Asia Pacific', 'c5'],
-                            ['Lumen Labs', 'Asia Pacific', 'c1'],
-                            ['Cedar Pharm', 'Middle East', 'c2'],
-                            ['Dune Health', 'Middle East', 'c3'],
-                            ['Arctic Bio', 'Europe', 'c4'],
-                        ],
+                    /* Client roster onboarded 1:1 from dromominds.in (regions + colors) */
+                    $clients = [
+                        ['na',   'Apex Clinical',     'heart-pulse', 'rose'],
+                        ['na',   'GeneSys Solutions', 'dna',         'indigo'],
+                        ['na',   'NovaLife Health',   'leaf',        'emerald'],
+                        ['eu',   'EuroPharma Ltd',    'flask',       'blue'],
+                        ['eu',   'BioNordic',         'snowflake',   'cyan'],
+                        ['eu',   'MediGene',          'atom',        'fuchsia'],
+                        ['eu',   'Oasis Medical',     'sun',         'amber'],
+                        ['eu',   'MENA Biotech',      'seedling',    'green'],
+                        ['eu',   'Gulf Diagnostics',  'vial',        'yellow'],
+                        ['asia', 'Sakura Bio',        'spa',         'pink'],
+                        ['asia', 'TechPharma',        'microchip',   'violet'],
+                        ['asia', 'Pacific Health',    'water',       'teal'],
+                        ['na',   'Vanguard Dx',       'heart-pulse', 'rose'],
+                        ['na',   'Helix Systems',     'dna',         'indigo'],
+                        ['na',   'Aegis Bio',         'leaf',        'emerald'],
+                        ['eu',   'AlpinMed',          'flask',       'blue'],
+                        ['eu',   'CryoTech EU',       'snowflake',   'cyan'],
+                        ['eu',   'Lumen Labs',        'atom',        'fuchsia'],
+                        ['eu',   'Desert Bio',        'sun',         'amber'],
+                        ['eu',   'Cedar Pharm',       'seedling',    'green'],
+                        ['eu',   'Dune Health',       'vial',        'yellow'],
+                        ['asia', 'Lotus Life',        'spa',         'pink'],
+                        ['asia', 'Oriental Rx',       'microchip',   'violet'],
+                        ['asia', 'Aussie Bio',        'water',       'teal'],
+                        ['na',   'Beacon Care',       'heart-pulse', 'rose'],
+                        ['na',   'Synapse Inc',       'dna',         'indigo'],
+                        ['na',   'Fortress Rx',       'leaf',        'emerald'],
+                        ['eu',   'Nordic Health',     'flask',       'blue'],
+                        ['eu',   'Arctic Bio',        'snowflake',   'cyan'],
+                        ['eu',   'Optima Labs',       'atom',        'fuchsia'],
                     ];
-                    function gx_initials($name) {
-                        $parts = preg_split('/\s+/', trim($name));
-                        $ini = strtoupper(substr($parts[0], 0, 1));
-                        if (count($parts) > 1) { $ini .= strtoupper(substr($parts[1], 0, 1)); }
-                        return $ini;
-                    }
+                    $client_tabs = [
+                        'all'  => 'Global Alliance',
+                        'na'   => 'North/South America',
+                        'eu'   => 'Europe/Middle-east',
+                        'asia' => 'Asia Pacific',
+                    ];
                     ?>
-                    <div class="gx-trust-wall" aria-label="Client organisations">
-                        <?php foreach ($client_cols as $ci => $col): ?>
-                        <div class="gx-t-col<?php echo $ci === 1 ? ' rev' : ''; ?>">
-                            <?php for ($loop = 0; $loop < 2; $loop++): foreach ($col as $c): ?>
-                            <div class="gx-t-card">
-                                <span class="gx-t-avatar <?php echo $c[2]; ?>"><?php echo gx_initials($c[0]); ?></span>
-                                <span class="gx-t-meta"><strong><?php echo $c[0]; ?></strong><small><?php echo $c[1]; ?></small></span>
-                                <i class="fas fa-circle-check"></i>
-                            </div>
-                            <?php endforeach; endfor; ?>
+                    <div class="gx-client-side">
+                        <div class="gx-client-tabs" role="tablist" aria-label="Filter clients by region">
+                            <?php foreach ($client_tabs as $rid => $label): ?>
+                            <button type="button" class="gx-ctab<?php echo $rid === 'all' ? ' active' : ''; ?>" data-region="<?php echo $rid; ?>"><?php echo $label; ?></button>
+                            <?php endforeach; ?>
                         </div>
-                        <?php endforeach; ?>
+                        <div class="gx-client-panel">
+                            <div class="gx-client-grid" id="clientGrid">
+                                <?php foreach ($clients as $c): ?>
+                                <div class="gx-client" data-region="<?php echo $c[0]; ?>">
+                                    <i class="fas fa-<?php echo $c[2]; ?> cl-<?php echo $c[3]; ?>"></i>
+                                    <h3><?php echo $c[1]; ?></h3>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
