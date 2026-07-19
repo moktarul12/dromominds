@@ -1,15 +1,13 @@
 RewriteEngine On
 RewriteBase /
 
-# Redirect /index.php to /
-RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+# Externally requested *.php → clean URL (use $1 from the path, not filesystem)
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteRule ^index\.php$ / [R=301,L]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
 
-# Redirect /page.php to /page
-RewriteCond %{THE_REQUEST} \s/+([^.?\s]+)\.php[\s?] [NC]
-RewriteRule ^ /%1 [R=301,L]
-
-# Serve /page as /page.php when the PHP file exists
+# Internally map /page → /page.php
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.php -f
