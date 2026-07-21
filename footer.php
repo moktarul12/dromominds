@@ -48,7 +48,7 @@
         <div class="footer-bottom">
             <p>&copy; <?php echo date('Y'); ?> DromoMinds Solutions. All rights reserved.</p>
             <div>
-                <a href="#">Privacy Policy</a>
+                <a href="/privacy-policy.html">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
             </div>
         </div>

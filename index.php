@@ -413,7 +413,7 @@ $page_desc = 'The AI-powered GxP platform for Pharma, Biotech, Medical Devices a
                 <div class="gx-footer-bottom">
                     <p>&copy; <?php echo date('Y'); ?> DromoMinds. All rights reserved.</p>
                     <div class="gx-f-legal">
-                        <a href="#">Privacy Policy</a>
+                        <a href="/privacy-policy.html">Privacy Policy</a>
                         <a href="#">Terms of Use</a>
                         <a href="#">Security</a>
                     </div>
