@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 
+==============================================================================
+ MODULAR COLOR PALETTE SYSTEM (Tailwind v4 Theme Definitions)
+ To change any color across the entire website, update the variable values below.
+==============================================================================
+*/
+
+@theme {
+  /* ==========================================================================
+     MODULAR COLOR PALETTE (Extracted from modern Life Sciences AI Platform)
+     To change any color across the entire website, update the variable values below.
+     ========================================================================== */
+
+  /* Dark Navy Canvas & Container Surfaces */
+  --color-midnight-950: #030C16;  /* Deepest Dark Canvas / Footer */
+  --color-midnight-900: #06131F;  /* Primary Dark Hero Canvas & Dark Section Base */
+  --color-midnight-850: #081726;  /* Dark Section Card Surface / Form Surface */
+  --color-midnight-800: #0D2235;  /* Elevated Dark Card Surface ("Why AI" / Feature Cards) */
+  --color-midnight-700: #122B42;  /* Dark Card Hover States & Highlights */
+  --color-midnight-600: #1B364D;  /* Dark Mode Borders & Dividers */
+
+  /* Vibrant Action & Accent Colors */
+  --color-electric-blue: #145C9E; /* Primary Action CTA Buttons & Active State */
+  --color-electric-hover: #0B4F6C; /* CTA Button Hover State */
+  --color-sky-cyan: #00A3E0;       /* Sky Cyan / Eyebrow Text & Category Tags */
+  --color-royal-blue: #0B4F6C;     /* Secondary Interactive Highlights */
+  --color-amber-gold: #D97706;     /* Warm Amber Gold / Tier & Process Highlights */
+
+  /* Light Theme Surfaces & Text */
+  --color-icy-canvas: #F4F7FB;    /* Light Section Background Surface */
+  --color-pure-white: #FFFFFF;    /* Pure White Card Backgrounds */
+  --color-slate-border: #E2E8F0;  /* Subtle Light Card Border */
+
+  --color-charcoal-heading: #0A192F; /* High-contrast Light Mode Title Text */
+  --color-slate-body: #334E68;       /* Primary Light Mode Body Copy */
+  --color-slate-muted: #627D98;      /* Secondary Supporting Metadata Text */
+
+  /* --- Semantic Color Utility Tokens --- */
+  --color-primary: var(--color-midnight-900);
+  --color-primary-dark: var(--color-midnight-950);
+  --color-secondary: var(--color-midnight-800);
+  --color-secondary-deep: var(--color-midnight-700);
+  --color-interactive: var(--color-electric-blue);
+  --color-supporting: var(--color-sky-cyan);
+  --color-warm: var(--color-amber-gold);
+  --color-warm-soft: #FDE68A;
+
+  --color-brand: var(--color-brand-current);
+  --color-brand-hover: var(--color-brand-hover-current);
+  --color-brand-dim: var(--color-brand-dim-current);
+  --color-brand-glow: var(--color-brand-glow-current);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+/* 
+==============================================================================
+ LIGHT & DARK SEMANTIC THEME VARIABLES
+ Modify these root definitions to customize light vs. dark mode semantics.
+==============================================================================
+*/
+:root {
+  /* --- Light Theme (Default) --- */
+  --color-brand-current: #145C9E;
+  --color-brand-hover-current: #0B4F6C;
+  --color-brand-dim-current: rgba(20, 92, 158, 0.08);
+  --color-brand-glow-current: rgba(20, 92, 158, 0.18);
+
+  --color-warm-accent: #38BDF8;
+  --color-dark-text-secondary: #94A3B8;
+
+  --color-app-bg: #F4F7FB;
+  --color-app-surface: #FFFFFF;
+  --color-app-surface-muted: #EBF1F6;
+  --color-app-border: #E2E8F0;
+
+  --color-app-text-heading: #0A192F;
+  --color-app-text-body: #334E68;
+  --color-app-text-muted: #627D98;
+
+  --color-success: #166534;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+}
+
+.dark {
+  /* --- Dark Theme Overrides --- */
+  --color-brand-current: #145C9E;
+  --color-brand-hover-current: #0B4F6C;
+  --color-brand-dim-current: rgba(20, 92, 158, 0.15);
+  --color-brand-glow-current: rgba(20, 92, 158, 0.25);
+
+  --color-warm-accent: #38BDF8;
+  --color-dark-text-secondary: #94A3B8;
+
+  --color-app-bg: #06131F;
+  --color-app-surface: #081726;
+  --color-app-surface-muted: #0D2235;
+  --color-app-border: #1B364D;
+
+  --color-app-text-heading: #FFFFFF;
+  --color-app-text-body: #E2E8F0;
+  --color-app-text-muted: #94A3B8;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-app-text-heading);
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+  background-color: var(--color-app-bg);
+}
+
+#root {
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+}
+
+.dark body {
+  color: #FFFFFF;
+  background-color: #041D28;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-track {
+  display: inline-flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+.logo-track:hover { animation-play-state: paused; }
+
+.shadow-glow { box-shadow: 0 0 20px rgba(6, 40, 54, 0.14); }
+
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #062836 0%, #145C9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mega-menu-trigger::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -20px; height: 20px;
+}
+
+.testimonial-card-3d {
+  position: absolute;
+  width: 100%;
+  max-width: 550px;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease, z-index 0.6s;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem;
+  cursor: pointer;
+}
+
+.testimonial-card-3d.active {
+  opacity: 1;
+  transform: translateX(0) scale(1) translateZ(0);
+  z-index: 30;
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+}
+.testimonial-card-3d.prev {
+  opacity: 0.4;
+  transform: translateX(-60%) scale(0.8) translateZ(-100px);
+  z-index: 20;
+}
+.testimonial-card-3d.next {
+  opacity: 0.4;
+  transform: translateX(60%) scale(0.8) translateZ(-100px);
+  z-index: 20;
+}
+.testimonial-card-3d.hidden-card {
+  opacity: 0;
+  transform: translateX(0) scale(0.6) translateZ(-200px);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card-3d { padding: 1.5rem; max-width: 90%; }
+  .testimonial-card-3d.prev { transform: translateX(-20%) scale(0.85) translateZ(-100px); opacity: 0.2; }
+  .testimonial-card-3d.next { transform: translateX(20%) scale(0.85) translateZ(-100px); opacity: 0.2; }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(1.3); opacity: 0; }
+}
+.pulse-element::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  z-index: -1;
+}

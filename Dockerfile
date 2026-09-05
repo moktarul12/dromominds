@@ -1,10 +1,15 @@
-FROM php:8.2-apache
+FROM node:22-alpine AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
 
-WORKDIR /var/www/html
-COPY . /var/www/html/
-
-RUN a2enmod rewrite \
-    && sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf \
-    && chown -R www-data:www-data /var/www/html
-
-EXPOSE 80
+FROM node:22-alpine
+WORKDIR /app
+ENV NODE_ENV=production
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev
+COPY --from=build /app/dist ./dist
+EXPOSE 3000
+CMD ["node", "dist/server.cjs"]

@@ -4,8 +4,9 @@ services:
     runtime: docker
     plan: free
     region: singapore
-    repo: https://github.com/moktarul12/dromominds
-    branch: main
     dockerfilePath: ./Dockerfile
-    healthCheckPath: /
+    healthCheckPath: /api/health
     autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production

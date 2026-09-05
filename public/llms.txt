@@ -1,0 +1,11 @@
+# Dromominds Solutions
+
+Welcome to the Dromominds Solutions website. We provide structured validation, qualification, and regulatory support services aligned with global GxP, FDA, and ISO requirements.
+
+## Key Sections
+
+- [Home](/)
+- [About Us](/about)
+- [Contact](/contact)
+- [Services](/computerized-system-validation)
+- [Resources](/resources)
